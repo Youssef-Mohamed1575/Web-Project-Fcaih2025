@@ -96,10 +96,10 @@ body {
 }
 .night-mode-btn {
   margin: 0 10px 0 20px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-image: url("NightModeIcon.png");
-  background-size: contain
+  background-size: contain;
   background-repeat: no-repeat; /* Ensures no repetition of the image ya shabab */
   background-position: center;
   border: none;
