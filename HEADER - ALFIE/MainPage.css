@@ -78,7 +78,7 @@ body {
   color: #000000;
 }
 /* --Sign in button */
-.header .navbar button {
+.header .navbar .SignPage {
   background-color: var(--main-color);
   outline: none;
   border-style: none;
@@ -91,8 +91,21 @@ body {
   transition: background-color 0.3s;
 }
 
-.header .navbar button:hover {
+.header .navbar .SignPage:hover {
   background-color: #a1754b;
+}
+.night-mode-btn {
+  margin: 0 10px 0 20px;
+  width: 30px;
+  height: 30px;
+  background-image: url("NightModeIcon.png");
+  background-size: contain; /* Adjust this to 'cover' or 'contain' based on your preference */
+  background-repeat: no-repeat; /* Ensure no tiling of the image */
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent; /* Ensure the button background is transparent */
 }
 
 /* !!!HEADER CLOSURE */
