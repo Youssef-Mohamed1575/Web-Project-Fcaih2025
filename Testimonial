@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Blueberry Elite</title>
+        <link rel="stylesheet" href="css/oop.css"/>
+        <link rel="icon" href="LOGOICON2.png" type="image/x-icon">
+    </head>
+    <body>
+      <!--  BEGINNING HEADER -->
+    <div class="header">
+      <div class="logo">
+        <a href="HeaderPart.html"><img src="LOGO4.png" alt="BLUEBERRY ELITE"></a>
+      </div>
+      <div class="navbar">
+        <a href="#MenuPage">Menu</a>
+        <a href="#ReviewsPage">Reviews</a>
+        <a href="#ContactPage">Contact us</a>
+        <button onclick="window.location.href='#SignPage'" class="SignPage">Sign up</button>
+        <button class="night-mode-btn"></button>
+      </div>
+    </div>
+      </div>
+      <script>
+        const header = document.querySelector(".header");
+        const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
+        const testImg = new Image();
+        testImg.onload = () => {
+          header.style.backgroundImage = `url(${imgPath})`;
+          header.style.backgroundColor = "";
+        };
+        testImg.onerror = () => {
+          header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
+          header.style.backgroundImage = "none";
+        };
+        testImg.src = imgPath;
+      </script>
+      <!-- HEADER CLOSURE -->
+    </body>
+    <body>
+<section id="testimontial">
+<div class="container">
+    <div class="heading">
+        <h2>Reviews About Blueberry Elite...</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="item">
+<img src="IMG-20250420-WA0072.jpg" alt="Laila Youseef" height="100" width="100">
+<h3>Liala Youseef</h3>
+<p>The place is super cozy and perfect for hanging out with friends.
+     The coffee was great, and the staff were really polite.
+     I loved the seating and the simple decor. I’ll definitely come back</p>
+    </div>
+    <div class="item">
+        <img src="IMG-20250421-WA0031.jpg" alt="Omar Tarek" width="100" height="100">
+    <h3>Omar Tarek</h3>
+        <p>The café looks super chic, perfect for girls who love taking pictures and enjoying a classy spot.
+             I tried the cake and it was delicious.
+              The place is peaceful and relaxing.</p>
+            </div>
+            <div class="item">
+                <img src="IMG-20250421-WA0032.jpg" alt="Mazen Ahmed" width="100" height="100">
+                <h3>Mazen Ahmed</h3>
+                <p>The overall vibe is excellent, with great music and warm lighting.
+                     The service was quick, and the prices were reasonable.
+                     It’s a nice spot that combines calm and style.”</p>
+                    </div>
+                    <div class="item">
+                        <img src="IMG-20250421-WA0034.jpg" alt="Nour Yasser" width="100" height="100">
+                        <h3>Nour Yasser</h3>
+                        <p>The drinks were average and nothing special.
+                             I was expecting more based on what I saw online.
+                              The vibe was okay, but not really my style.</p>
+                            </div>
+                            <div class="item">
+                                <img src="IMG-20250421-WA0033.jpg" alt="Marwen Tamer" width="100" height="100">
+                                <h3>Marwen Tamer</h3>
+                                <p>The staff were friendly, but the service was a bit slow. 
+                                    We waited quite a while for our order, 
+                                    which was a bit frustrating.</p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="IMG-20250421-WA0035.jpg" alt="Celia Malek" width="100" height="100">
+                                        <h3>Celia Malek</h3>
+                                        <p>The place was okay overall. I liked the decor and the general vibe,
+                                             but some things could be better. My drink was just fine, not great,
+                                              and the music was a bit too loud for my taste. It’s a nice spot, 
+                                            but I don’t think it would be my first choice next time.</p>
+                                            </div>
+</div>
+</section>
+    </body>
+</html>
