@@ -1,0 +1,260 @@
+/* !!!SETTING GLOBAL RULES */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+  /* background-image: url(logo4.png); */
+  /* background-size: 650px; */
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+* {
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --header-font: "Noto Serif", "serif";
+  --main-color: #c7a17a;
+  --margin-value: 75px;
+}
+/* !!!GLOBAL RULES SET */
+
+/* !!!BEGINNING HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+/* --Logo image */
+.header img {
+  width: 100px;
+  margin-left: var(--margin-value);
+  padding: 0px;
+}
+
+/* --Customizing nav */
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: var(--margin-value);
+  align-items: center;
+}
+
+.header .navbar a {
+  position: relative;
+  padding: 5px 15px;
+  color: #ecd4c9;
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 20px;
+  margin: 0px 22px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.header .navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--main-color);
+  z-index: 0;
+  transition: width 0.2s ease;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.header .navbar a:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+.header .navbar a:hover {
+  color: #000000;
+}
+/* --Sign in button */
+.header .navbar .SignPage {
+  background-color: var(--main-color);
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header .navbar .SignPage:hover {
+  background-color: #a1754b;
+}
+/* Night mode button */
+.night-mode-btn {
+  margin: 0 -10px 0 20px;
+  width: 35px;
+  height: 35px;
+  background-image: url("NightModeIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.night-mode-btn:hover {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* !!!HEADER CLOSURE */
+
+.Mainbody{
+  background: url(BgStatic.png) ;
+  margin-top: -16px; 
+  background-color: #bf762e41;
+  object-fit: cover;
+  z-index: -1; /* stays behind everything */
+  background-size: contain;
+  background-repeat: repeat;
+
+}
+.MainButtonlight{
+  background-color: var(--main-color);
+  color: #000;
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+.MainButtonlight:hover {
+  background-color: #a1754b;
+}
+.MainButtondark{
+  background-color: #070707;
+  color: #fefefec6;
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+.MainButtondark:hover {
+  background-color: #fefefec6;
+  color: #070707 ;
+}
+.bolddark,
+.boldlight{
+  font-size: 46px;
+  font-family: "Yellowtail", cursive;
+  font-weight: bold;
+}
+.bolddark{
+  color: #333;
+}
+.boldlight{
+  color: black;
+}
+.slide1{
+  align-items: left;
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  margin: left 80px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide1text{
+    padding-left: 250px;
+}
+.text1small{}
+.Slide1img{
+  margin-right: 140px;
+}
+.slide2{
+  padding-bottom: 171px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+}
+.slide2img{
+  margin-left: 250px;
+  margin-top: 170px;
+}
+.slide2text{
+  margin-top: 220px;
+  margin-left: 100px;
+}
+.text2small{
+  max-width: 70%;
+  font-size: 20px;
+  color: #fefefec6;
+}
+.slide3{
+  display: flex;
+  justify-content: space-between;
+ }
+.slide3text{
+  margin-top: 120px;
+  padding-left: 250px;
+  font-size: large;
+}
+.slide3img{
+  margin-right: 10px;
+  margin-top: 50px;
+}
+.slide4{
+  background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.slide4img{
+  margin-left: 150px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.slide4text{
+  margin: auto;
+}
+.text4small{
+  max-width: 70%;
+  font-size: 20px;
+  color: #fefefec6; 
+}
+.slide4 .slide4text .MainButtondark{
+  margin-left: 450px;
+}
