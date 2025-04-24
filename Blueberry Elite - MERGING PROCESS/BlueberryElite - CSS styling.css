@@ -1,0 +1,612 @@
+/* !!!SETTING GLOBAL RULES */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --header-font: "Noto Serif", "serif";
+  --main-color: #c7a17a;
+  --margin-value: 75px;
+  --secondary-color: #a1754b;
+}
+/* !!!GLOBAL RULES SET */
+
+/* !!!BEGINNING HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+}
+/* --Logo image */
+.header img {
+  width: 100px;
+  margin-left: var(--margin-value);
+  padding: 0px;
+}
+
+/* --Customizing nav */
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: var(--margin-value);
+  align-items: center;
+}
+
+.header .navbar a {
+  position: relative;
+  padding: 5px 15px;
+  color: #ecd4c9;
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 20px;
+  margin: 0px 22px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.header .navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--main-color);
+  z-index: 0;
+  transition: width 0.2s ease;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.header .navbar a:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+.header .navbar a:hover {
+  color: #000000;
+}
+/* --Sign in button */
+.header .navbar .SignPage {
+  background-color: var(--main-color);
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header .navbar .SignPage:hover {
+  background-color: #a1754b;
+}
+/* Night mode button */
+.night-mode-btn {
+  margin: 0 -10px 0 20px;
+  width: 35px;
+  height: 35px;
+  background-image: url("HEADER CONTENT/NightModeIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.night-mode-btn:hover {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* !!!HEADER CLOSURE */
+
+/* !!!BEGINNING MainPage CONTENT */
+.Mainbody {
+  background: url(BgStatic.png);
+  margin-top: -16px;
+  background-color: #bf762e41;
+  object-fit: cover;
+  z-index: -1; /* stays behind everything */
+  background-size: contain;
+  background-repeat: repeat;
+}
+.MainButtonlight {
+  background-color: var(--main-color);
+  color: #000;
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+.MainButtonlight:hover {
+  background-color: #a1754b;
+}
+.MainButtondark {
+  background-color: #070707;
+  color: #fefefec6;
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+.MainButtondark:hover {
+  background-color: #fefefec6;
+  color: #070707;
+}
+.bolddark,
+.boldlight {
+  font-size: 46px;
+  font-family: "Yellowtail", cursive;
+  font-weight: bold;
+}
+.bolddark {
+  color: #333;
+}
+.boldlight {
+  color: black;
+}
+.slide1 {
+  align-items: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: left 80px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slide1text {
+  padding-left: 250px;
+}
+.text1small {
+}
+.Slide1img {
+  margin-right: 140px;
+}
+.slide2 {
+  padding-bottom: 171px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+}
+.slide2img {
+  margin-left: 250px;
+  margin-top: 170px;
+}
+.slide2text {
+  margin-top: 220px;
+  margin-left: 100px;
+}
+.text2small {
+  max-width: 70%;
+  font-size: 20px;
+  color: #fefefec6;
+}
+.slide3 {
+  display: flex;
+  justify-content: space-between;
+}
+.slide3text {
+  margin-top: 120px;
+  padding-left: 250px;
+  font-size: large;
+}
+.slide3img {
+  margin-right: 10px;
+  margin-top: 50px;
+}
+.slide4 {
+  background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.slide4img {
+  margin-left: 150px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.slide4text {
+  margin: auto;
+}
+.text4small {
+  max-width: 70%;
+  font-size: 20px;
+  color: #fefefec6;
+}
+.slide4 .slide4text .MainButtondark {
+  margin-left: 450px;
+}
+
+/* !!!MainPage CLOSURE */
+/* !!!Beginning MENU PAGE */
+
+/* !!!MENU PAGE CLOSURE */
+/* !!!BEGINNING REVIEWS */
+
+/* !!!REVIEWS CLOSURE */
+/* !!!BEGINNING RESERVATIONS */
+
+/* !!!RESERVATIONS CLOSURE */
+/* !!!BEGINNING SIGN-IN PAGE */
+.login {
+  width: 520px;
+  height: 430px;
+  padding: 0px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background: #e2b98f;
+  border-radius: 20px;
+}
+.login h1 {
+  margin: 0;
+  padding: 20px 20px;
+  color: #131111;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login label {
+  color: #02070f;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login input {
+  width: 100%;
+  margin: 10px 0px;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+.login input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #1f2226;
+  height: 40px;
+  background: #fefefec6;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.login input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+.login a {
+  text-decoration: none;
+  color: #131111;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 15px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.remember {
+  transform: scale(1.3);
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+.forget_passward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.Register p a :hover {
+  text-decoration: underline;
+}
+
+/* !!!SIGN-IN PAGE CLOSURE */
+
+/* !!!BEGINNING Suggestions/Complaints */
+.Complaint_body {
+  background-color: #bf762e41;
+  font-family: "Open Sans", serif;
+  background-image: url(CustomerComplaint\ CONTENT/beans-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+}
+
+.complaintHead {
+  color: #1f2226;
+  text-align: center;
+  justify-content: center;
+  font-family: "Oswald", serif;
+  margin-bottom: 20px;
+  text-shadow: #8f7e6f;
+}
+
+.Complaint-container {
+  background-color: #fbfbfb;
+  backdrop-filter: blur(20px);
+  background: transparent;
+  width: 600px;
+  height: 600px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 60px;
+  border-radius: 5px;
+  border-color: #1f2226;
+  box-shadow: 0 15px 50px rgb(0, 0, 0, 0.5);
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.complaintInput {
+  border-radius: 10px;
+  border-color: #bf762e41;
+  padding: 10px 15px 10px 15px;
+  margin-bottom: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbfb;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.FeedbackLabels {
+  margin-left: 7px;
+}
+
+.complaint_select_box {
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  border-color: #bf762e41;
+  padding: 5px 30px 5px 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 90%;
+  height: 40px;
+  justify-content: center;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.complaintTextArea {
+  background-color: #fbfbfb;
+  resize: none;
+  height: 100px;
+  width: 90%;
+  border-radius: 10px;
+  border-color: #bf762e41;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 5px;
+  padding: 15px;
+  margin-bottom: 40px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.complaintSend {
+  background-color: #c7a17a;
+  font-size: 20px;
+  cursor: pointer;
+  border: solid;
+  width: 90%;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 0 15px 50px rgb(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  transition: 0.3s;
+  border: none;
+}
+.complaintSend:hover {
+  background-color: #d3ae85;
+}
+
+.complaintSend {
+  color: #ffffff;
+}
+
+.complaintClass.form {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.complaintSpan {
+  color: #1f2226;
+}
+/* !!!Suggestions/Complaints CLOSURE */
+
+/* !!!BEGINNING REGISTRATION*/
+
+.RegisterationFieldset {
+  font-family: "Poppins", sans-serif;
+  margin: 9vh auto;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 900px;
+  border-radius: 25px;
+  border-width: 3px;
+  background-color: #fbfbfb;
+  border: none;
+  outline: none;
+}
+.registerbtn {
+  font-family: "Poppins", sans-serif;
+  width: 200px;
+  height: 40px;
+  margin-left: 70px;
+  margin-top: -10px;
+  background-color: #c7a17a;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  color: #1f2226;
+  transition: 0.3s;
+}
+.registerbtn:hover {
+  background-color: #a1754b;
+}
+.Registration-image {
+  margin-left: 0px;
+  width: 350px;
+  margin-top: -10px;
+  display: inline-flex;
+  float: left;
+  border-radius: 10px 0px 0px 10px;
+  z-index: 4;
+}
+
+.createanacc {
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px 5px 0px;
+  padding: 0px;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: #1f2226;
+}
+
+.formspaces {
+  font-family: "Poppins", sans-serif;
+  margin-left: 20px;
+  font-size: larger;
+}
+.register {
+  font-family: "Poppins", sans-serif;
+  margin-left: 30px;
+}
+.fname {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  font-size: larger;
+}
+.lname {
+  font-family: "Poppins", sans-serif;
+  margin-left: 153px;
+  font-size: larger;
+}
+.inputs {
+  width: 200px;
+  height: 33px;
+  padding-left: 5px;
+  border-color: #1f2226;
+  outline: none;
+}
+
+#username {
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+  width: 264.5px;
+  margin-left: 36.5px;
+}
+#email {
+  font-family: "Poppins", sans-serif;
+  padding-left: 10px;
+  width: 264px;
+  margin-left: 3px;
+}
+#age {
+  width: 264px;
+  margin-left: 6.75px;
+  padding-left: 10px;
+}
+#phone-no {
+  width: 265px;
+}
+#Registration-password {
+  width: 266.5px;
+  margin-left: 40px;
+}
+.regbackground {
+  font-family: "Poppins", sans-serif;
+  background-color: #c7a17a;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-top: 5px;
+  height: 50px;
+  z-index: 5;
+  position: relative;
+  margin-bottom: 4px;
+}
+.Registration-Login {
+  text-decoration: none;
+  color: #1f2226;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+.Registration-Login:hover {
+  color: #a1754b;
+}
+/* !!!REGISTRATION CLOSURE */

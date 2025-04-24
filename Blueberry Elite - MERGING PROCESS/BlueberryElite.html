@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueberry Elite</title>
+    <link rel="stylesheet" href="BlueberryElite - CSS styling.css" />
+    <link rel="icon" href="HEADER CONTENT/LOGOICON2.png" type="image/x-icon">
+  </head>
+  <body>
+    <!--  BEGINNING HEADER -->
+  <div class="header">
+    <div class="logo">
+      <a href="BlueberryElite.html"><img src="HEADER CONTENT/LOGO4.png" alt="BLUEBERRY ELITE"></a>
+    </div>
+    <div class="navbar">
+      <a href="#MenuPage">Menu</a>
+      <a href="#ReviewsPage">Reviews</a>
+      <a href="#ContactPage">Reservations</a>
+      <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
+      <button class="night-mode-btn"></button>
+    </div>
+  </div>
+    </div>
+    <script>
+      const header = document.querySelector(".header");
+      const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
+      const testImg = new Image();
+      testImg.onload = () => {
+        header.style.backgroundImage = `url(${imgPath})`;
+        header.style.backgroundColor = "";
+      };
+      testImg.onerror = () => {
+        header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
+        header.style.backgroundImage = "none";
+      };
+      testImg.src = imgPath;
+    </script>
+    <!-- HEADER CLOSURE -->
+        <!-- BEGINNING MAIN BODY  -->
+        <div class="Mainbody"> <!--div Mainbody start-->
+          <div class="slide1"> <!--div slide1 start-->
+            <div class="slide1text"> <!--div slide1text start-->
+              
+              <div class="bolddark">
+                Coffee? Always.<br> 
+                Vibes? Immaculate.</div>
+                <br>
+                Welcome to your new obsession.
+                We’re the spot where espresso meets expression,
+                and every latte comes with a side of personality.
+                Whether you’re here to romanticize your study session,
+                spill the tea with friends, or just vibe solo with a
+                chai and your playlist.
+              <br>
+              <br>
+              <div class="bolddark">We got you !</div>
+              <br>
+              <div class="text1small">Sip back, relax, and let Blueberry Elite do its thing.</div>  
+            </div> <!--div slide1text end-->
+    
+            <div class="Slide1img"><!--div slide1img start-->
+              <img src="MainPage CONTENT/Slide1img.png" alt="" width="600px">
+            </div><!--div slide1img end-->
+    
+          </div><!-- div slide1 end-->
+              
+          <div class="slide2" id="MenuPage"> <!--div slide2 start-->
+    
+            <div class="slide2img"><!--div slide2img start-->
+              <img src="MainPage CONTENT/slide2img.png" alt="" width="300px">
+            </div><!--div slide2img end-->
+    
+            <div class="slide2text"><!--div slide2text start-->
+              <br>
+              <div class="boldlight">Hot days, cold days — we’ve got you covered!</div>
+              <br>
+              <div class="text2small"> you're craving an ice-cold blueberry refresher or a steamy latte to warm your soul, Blueberry Elite serves up delicious drinks for every kind of day. Hot, cold, creamy, bold — our menu is full of cozy classics and unexpected twists.
+              <br>
+              <br>
+              <span class="boldlight" style="font-size: 32px;">Feeling thirsty? </span><button class="MainButtondark">Check Our Menu!</button></div>
+            </div><!--div slide2text end-->
+          </div><!--div slide2 end-->
+          
+          <div class="review-anchor" id="ReviewsPage" style="visibility: hidden; position:relative; top:-99px"></div>
+          <div class="slide3" id="ReviewsPag"> <!--div slide3 start-->
+            <div class="slide3text"><!--div slide3text start-->
+              <div class="bolddark"> coffee is perfect — and so are we!</div><br>
+              Don’t just take our word for it. From first sips to last bites, our guests have a latte love for Blueberry Elite. See what the buzz is all about — honest words, happy vibes, and maybe a few coffee-fueled love letters.
+    
+              <br><br><button class="MainButtonlight" style="margin-left: 450px; font-size:large">Read the Reviews</button><br><br>
+              <div class=""><div class="bolddark">Perfect coffee, perfectly open ears.</div><br>
+                Got a thought brewing? Whether it’s a suggestion for something new or a little feedback to help us do even better, we’d love to hear from you. Complaints, compliments, or blueberry-inspired brilliance — lay it on us.</div>
+              <button class="MainButtonlight" style="margin-left: 440px; font-weight:bolder;font-size:large" onclick="window.location.href='CustomerComplaint.html'">Drop Your Thoughts</button>
+              </div><!--div slide3text end-->
+            
+            <div class="slide3img"><!--div slide3img start-->
+              <img src="MainPage CONTENT/cuteLatte.png" alt="" width="600px">
+            </div><!--div slide3img end-->
+          </div><!--div slide3 end-->
+          <div class="reserve-anchor" id="Reserve" style="margin-bottom: 35px;visibility:hidden"></div>
+          <div class="slide4"><!--div Slide4 start-->
+            <div class="slide4img"><!--div slide4img start-->
+              <img src="MainPage CONTENT/pngtree-female-barista-carrying-coffee-with-tray-at-coffee-shop-counter-png-image_12187053.png" alt="" width="500px">
+            </div>
+            <div class="slide4text"><!--div slide4text start-->
+              <div class="boldlight"> seat’s waiting — we’re just holding it warm!</div>
+              <br>
+              <div class="text4small"> a coffee date, a study session, or just want to make sure your favorite corner table’s free? Reserve your spot and we’ll save the good vibes (and maybe a blueberry muffin) just for you</div>
+              <br>
+              <button class="MainButtondark">Claim Your Corner</button>
+            </div><!--div slide4text end-->
+            
+          </div><!--div slide4 end-->
+        
+          
+        </div>
+        <!-- MainPage Closure -->
+      </body>
+</html>
