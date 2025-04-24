@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve Your Spot</title>
+    <link rel="stylesheet" href="BlueberryElite - CSS styling.css" />
+    <link rel="icon" href="HEADER CONTENT/LOGOICON2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--  BEGINNING HEADER -->
+  <div class="header">
+    <div class="logo">
+      <a href="BlueberryElite.html"><img src="HEADER CONTENT/LOGO4.png" alt="BLUEBERRY ELITE"></a>
+    </div>
+    <div class="navbar">
+      <a href="#MenuPage">Menu</a>
+      <a href="#ReviewsPage">Reviews</a>
+      <a href="Reservation.html">Reservations</a>
+      <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
+      <button class="night-mode-btn"></button>
+    </div>
+  </div>
+    </div>
+    <script>
+      const header = document.querySelector(".header");
+      const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
+      const testImg = new Image();
+      testImg.onload = () => {
+        header.style.backgroundImage = `url(${imgPath})`;
+        header.style.backgroundColor = "";
+      };
+      testImg.onerror = () => {
+        header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
+        header.style.backgroundImage = "none";
+      };
+      testImg.src = imgPath;
+    </script>
+    <!-- HEADER CLOSURE -->
+    <!--CONTACT START-->
+
+    <section id="contact"> 
+      <div class="section-content">
+        
+        <h2 class="font">RESERVATION AREA</h2>
+        <div class="row">
+          
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d221479.9281192837!2d31.428592221329975!3d29.846276678439725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scosta%20coffee!5e0!3m2!1sar!2seg!4v1745275587141!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+    
+          <div class="contact-content">
+            <h3 class="small">Book a Table</h3>
+            <form>
+              <input type="text" name="name" id="name" placeholder="Your name">
+              <input type="email" name="email" id="email" placeholder="Your e-mail">
+              <input type="number" name="persons" id="persons" placeholder="Persons">
+              <input type="date" name="date" id="date">
+              <input type="time" name="time" id="time">
+              <textarea name="message" id="message" placeholder="Any notes..." rows="6"></textarea>
+              <button type="submit" class="btn-submit">Book a Table</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>  
+  </body>
+</html>
+
+<!--CONTACT END-->
