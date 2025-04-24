@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: url(logo4.png);
+    background-size: 650px;
+}
+  @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+  :root {
+    --header-font: "Noto Serif", "serif";
+    --main-color: #c7a17a;
+    --margin-value: 75px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* !!!GLOBAL RULES SET */
+ 
+ /* !!!BEGINNING HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;/*يبقي فوق كل العناصر */ 
+    position: sticky;
+    top: 0;
+}
+  /* --Logo image */
+  .header img {
+    width: 100px;
+    margin-left: var(--margin-value);
+    padding: 0px;
+  }
+  
+  /* --Customizing nav */
+  .header .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-right: var(--margin-value);
+    align-items: center;
+  }
+  
+  .header .navbar a {
+    position: relative;
+    padding: 5px 15px;
+    color: #ecd4c9;
+    text-decoration: none;
+    font-family: var(--header-font);
+    font-size: 20px;
+    margin: 0px 22px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .header .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color);
+    z-index: 0;
+    transition: width 0.2s ease;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .header .navbar a:hover::before {
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .header .navbar a:hover {
+    color: #000000;
+  }
+  /* --Sign in button */
+  .header .navbar .SignPage {
+    background-color: var(--main-color);
+    outline: none;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header .navbar .SignPage:hover {
+    background-color: #a1754b;
+  }
+  .night-mode-btn {
+    margin: 0 10px 0 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../NightModeIcon.png");
+    background-size: contain; /* Adjust this to 'cover' or 'contain' based on your preference */
+    background-repeat: no-repeat; /* Ensure no tiling of the image */
+    background-size: contain;
+    background-repeat: no-repeat; /* Ensures no repetition of the image ya shabab */
+    background-position: center;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    background-color: transparent; /* Ensure the button background is transparent */
+    background-color: transparent;
+  }
+  
+  /* !!!HEADER CLOSURE */
+
+  /* menu beginning */
+h1{
+    text-transform: uppercase;
+}
+
+.head{
+    height: 120px;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+.highlight_text{
+    color: #c7a17a;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+}
+.drinks{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*colums have the same width*/
+    margin-top:0px;
+    gap: 30px; /* space between cols */
+    align-items: stretch;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    display: flex;/* السعر والوصف والصورة جمب بعض */
+    justify-content: space-between;
+    gap: 30px; 
+    align-items: center;
+    /* font-family: "Yellowtail", cursive; */
+    margin: 10px 0;
+    border: 1px #ddd solid;
+    border-radius: 10px;
+    padding: 25px 20px;
+    height: 150px;
+    color: #000000;
+    background-color: transparent;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;/*  الصورة بتحتفظ بحجمها بدون تكدس */ 
+}
+.item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--main-color);
+  z-index: 0;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+  z-index: -1;
+}
+.item:hover::before{
+  width: 100%;
+  z-index: -1;
+  background-color: #c7a17a;
+}
+.highlight_text:hover{
+  color: azure;
+}
+.item:hover{
+  color: azure;
+}
+.item:hover .price p{ /* هخلي ال hover يطبق علي السعر لما اعمل hover علي ال item*/
+  color:#333;
+}
+/* menu closure */
+/* search bar */
+.search-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 20px;
+  position: absolute;
+  right:0 ;
+}
+.search-container i {
+  font-size: 18px;
+}
+.search-input{
+  display: block;
+  padding: 5px;
+  width: 200px;
+  font-size: 16px;
+  border:#333 solid 1px; 
+  border-radius: 5px;
+}
+/* search bar */
