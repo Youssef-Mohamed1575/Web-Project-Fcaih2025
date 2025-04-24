@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueberry Elite</title>
+    <link rel="icon" href="LOGOICON2.png" type="image/x-icon">
+    <link rel="stylesheet" href="CustomerComplaint.css">
+    <link rel="stylesheet" href="HeaderPart.css" />
+</head>
+<body>
+
+
+<!--  BEGINNING HEADER -->
+<div class="header">
+    <div class="logo">
+      <a href="HeaderPart.html"><img src="LOGO4.png" alt="BLUEBERRY ELITE"></a>
+    </div>
+    <div class="navbar">
+      <a href="#MenuPage">Menu</a>
+      <a href="#ReviewsPage">Reviews</a>
+      <a href="#ContactPage">Contact us</a>
+      <button onclick="window.location.href='#SignPage'" class="SignPage">Sign up</button>
+      <button class="night-mode-btn"></button>
+    </div>
+    </div>
+    </div>
+    <script>
+      const header = document.querySelector(".header");
+      const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
+      const testImg = new Image();
+      testImg.onload = () => {
+        header.style.backgroundImage = `url(${imgPath})`;
+        header.style.backgroundColor = "";
+      };
+      testImg.onerror = () => {
+        header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
+        header.style.backgroundImage = "none";
+      };
+      testImg.src = imgPath;
+    </script>
+    <!-- HEADER CLOSURE -->
+
+
+
+
+             <!-- Complaint form start -->
+<div class="Complaint_body">
+    
+    <div class="container">
+    
+             <!--  form title -->
+
+     <h2>Complaint Form</h2>  
+
+     <form >
+     
+             <!-- name  -->
+         <div class="name">
+        <label for="name" >Name:</label><br>
+        <input type="text" id="name" placeholder="Enter Your Name"  required ><br>
+     </div>
+     
+              <!-- email -->
+        <div class="email">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"  placeholder="Enter Your Email Address"  required><br>
+        </div>
+     
+              <!-- category of complaint -->
+            <div class="option">
+                <label for="complaintType">What Caused Your Dissatisfaction?</label><br>
+                <select  class="select_box"   name="complaintType" id="complaintType"  required><br>
+        
+                <option value=" disabledselected">Select an  Option</option>
+                <option value="Customer Service">Registration</option>
+                <option value="Customer Service">Customer Service</option>
+                <option value="Products">Products</option>
+                <option value="Payment">Payment</option>
+                <option value="Other">Other</option>
+                </select>
+        </div> 
+     
+              <!-- subject -->
+            <div class="message">
+                <label for="message"><span></span>Complaint Details:</label><br>
+                <textarea name="message" id="message"  placeholder="Write Your Complaint..." ></textarea><br>
+            </div>
+     
+     
+             <!-- submit button -->
+     <button class="send" type="submit">Submit</button>
+     
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Complaint form end -->
+</body>
+</html>
