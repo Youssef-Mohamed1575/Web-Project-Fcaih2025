@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueberry Elite</title>
+    <link rel="stylesheet" href="BlueberryElite - CSS styling.css" />
+    <link rel="icon" href="HEADER CONTENT/LOGOICON2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: rgb(194, 128, 75);
+      }
+    </style>
+  </head>
+  <body>
+    <!--  BEGINNING HEADER -->
+  <div class="header">
+    <div class="logo">
+      <a href="BlueberryElite.html"><img src="HEADER CONTENT/LOGO4.png" alt="BLUEBERRY ELITE"></a>
+    </div>
+    <div class="navbar">
+      <a href="menu.html">Menu</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Reservation.html">Reservations</a>
+      <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
+      <button class="night-mode-btn"></button>
+    </div>
+  </div>
+    </div>
+    <script>
+      const header = document.querySelector(".header");
+      const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
+      const testImg = new Image();
+      testImg.onload = () => {
+        header.style.backgroundImage = `url(${imgPath})`;
+        header.style.backgroundColor = "";
+      };
+      testImg.onerror = () => {
+        header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
+        header.style.backgroundImage = "none";
+      };
+      testImg.src = imgPath;
+    </script>
+    <!-- HEADER CLOSURE -->
+    </body>
+    <body>
+
+      <!--BEGINNING testimontial-->
+<div class="Reviews-container">
+  <section id="testimontial">
+  <div class="container">
+      <div class="Reviews-heading">
+          <h2>Reviews About Blueberry Elite...</h2>
+      </div>
+  </div>
+  <div class="Reviews-row">
+      <div class="item">
+  <img  class="img"    src="Reviews CONTENT/IMG-20250420-WA0072.jpg" alt="Laila Youseef" height="100" width="100">
+  <h3>Laila Youseef</h3>
+  <p>The place is super cozy and perfect for hanging out with friends.
+      The coffee was great, and the staff were really polite.
+      I loved the seating and the simple decor. I’ll definitely come back</p>
+      </div>
+      <div class="item">
+          <img  class="img" src="Reviews CONTENT/IMG-20250421-WA0031.jpg" alt="Omar Tarek" width="100" height="100">
+      <h3>Omar Tarek</h3>
+          <p>The café looks super chic, perfect for girls who love taking pictures and enjoying a classy spot.
+              I tried the cake and it was delicious.
+                The place is peaceful and relaxing.</p>
+              </div>
+              <div class="item">
+                  <img  class="img"   src="Reviews CONTENT/IMG-20250421-WA0032.jpg" alt="Mazen Ahmed" width="100" height="100">
+                  <h3>Mazen Ahmed</h3>
+                  <p>The overall vibe is excellent, with great music and warm lighting.
+                      The service was quick, and the prices were reasonable.
+                      It’s a nice spot that combines calm and style.”</p>
+                      </div>
+                      <div class="item">
+                          <img class="img"  src="Reviews CONTENT/IMG-20250421-WA0034.jpg" alt="Nour Yasser" width="100" height="100">
+                          <h3>Nour Yasser</h3>
+                          <p>The drinks were average and nothing special.
+                              I was expecting more based on what I saw online.
+                                The vibe was okay, but not really my style.</p>
+                              </div>
+                              <div class="item">
+                                  <img class="img"   src="Reviews CONTENT/IMG-20250421-WA0033.jpg" alt="Marwen Tamer" width="100" height="100">
+                                  <h3>Marwen Tamer</h3>
+                                  <p>The staff were friendly, but the service was a bit slow. 
+                                      We waited quite a while for our order, 
+                                      which was a bit frustrating.</p>
+                                      </div>
+                                      <div class="item">
+                                          <img class="img"    src="Reviews CONTENT/IMG-20250421-WA0035.jpg" alt="Celia Malek" width="100" height="100">
+                                          <h3>Celia Malek</h3>
+                                          <p>The place was okay overall. I liked the decor and the general vibe,
+                                              but some things could be better. My drink was just fine, not great,
+                                                and the music was a bit too loud for my taste. It’s a nice spot, 
+                                              but I don’t think it would be my first choice next time.</p>
+                                              </div>
+  </div>
+  </section>
+</div>
+<!-- testimontial CLOSURE -->
+        <!-- BEGINNING FOOTER -->
+        <footer class="parent" id="Footer">
+          <div class="item1">
+            <h1 class="title">About the cafè</h1>
+            <h3 class="child">North 90 Street,Fifth Settlement,New Cairo,Egypt</h3>
+            <h3 class="nwr">customerservice@Blueberry Elite.com</h3>
+            <h3 class="child">+201117493206</h3>
+          </div>
+          <div class="item2">
+            <h1 class="title">Quick Links</h1>
+            <a href="#Footer" class="nwr">About us</a>
+            <h3>
+              <a class="nwr1" href="#Footer"
+                ><i class="fas fa-map-marker-alt"></i> Location
+              </a>
+            </h3>
+            <h3><a class="nwr" href="CustomerComplaint.html">Contact</a></h3>
+          </div>
+          <div class="item3">
+            <h1 class="title">Follow us</h1>
+            <h3>
+              <a class="nwr2" href="#Footer"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr3" href="#Footer"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr4" href="#Footer"
+                ><i class="fab fa-twitter"></i> Twitter</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr5" href="#Footer"
+                ><i class="fab fa-tiktok"></i> Tiktok
+              </a>
+            </h3>
+          </div>
+          <div class="item4">
+            <h3 class="xxx">
+              We're always happy to have you! Open daily from 8:00 AM to 11:00 PM -
+              Your favorite cofee is waiting!
+            </h3>
+            <h4 class="xx">&copy;2025 Café Blueberry Elite. All rights reserved.</h4>
+          </div>
+        </footer>
+        <!-- Footer Closure -->
+    </body>
+</html>
+
+
+
+
+
+
+
+

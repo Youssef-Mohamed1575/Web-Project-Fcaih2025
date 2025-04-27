@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="BlueberryElite - CSS styling.css" />
     <link rel="icon" href="HEADER CONTENT/LOGOICON2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <style>
       body {
         background-image: url(RegisterPage\ CONTENT/Registration-background.webp);
       }
+      footer {
+  position: relative;
+  margin-top: 50%; /* push footer lower */
+}
     </style>
   </head>
   <body>
@@ -19,9 +25,9 @@
       <a href="BlueberryElite.html"><img src="HEADER CONTENT/LOGO4.png" alt="BLUEBERRY ELITE"></a>
     </div>
     <div class="navbar">
-      <a href="#MenuPage">Menu</a>
-      <a href="#ReviewsPage">Reviews</a>
-      <a href="#ContactPage">Reservations</a>
+      <a href="menu.html">Menu</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Reservation.html">Reservations</a>
       <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
       <button class="night-mode-btn"></button>
     </div>
@@ -42,6 +48,7 @@
       testImg.src = imgPath;
     </script>
     <!-- HEADER CLOSURE -->
+    <!-- Beginning Sign in page -->
     <div class="login">
       <h1>Login</h1>
       <form>
@@ -80,5 +87,56 @@
         </div>
       </form>
     </div>
+    <!-- Sign in page closure -->
+        <!-- BEGINNING FOOTER -->
+        <footer class="parent" id="Footer">
+          <div class="item1">
+            <h1 class="title">About the cafè</h1>
+            <h3 class="child">North 90 Street,Fifth Settlement,New Cairo,Egypt</h3>
+            <h3 class="nwr">customerservice@Blueberry Elite.com</h3>
+            <h3 class="child">+201117493206</h3>
+          </div>
+          <div class="item2">
+            <h1 class="title">Quick Links</h1>
+            <a href="#Footer" class="nwr">About us</a>
+            <h3>
+              <a class="nwr1" href="#Footer"
+                ><i class="fas fa-map-marker-alt"></i> Location
+              </a>
+            </h3>
+            <h3><a class="nwr" href="CustomerComplaint.html">Contact</a></h3>
+          </div>
+          <div class="item3">
+            <h1 class="title">Follow us</h1>
+            <h3>
+              <a class="nwr2" href="#Footer"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr3" href="#Footer"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr4" href="#Footer"
+                ><i class="fab fa-twitter"></i> Twitter</a
+              >
+            </h3>
+            <h3>
+              <a class="nwr5" href="#Footer"
+                ><i class="fab fa-tiktok"></i> Tiktok
+              </a>
+            </h3>
+          </div>
+          <div class="item4">
+            <h3 class="xxx">
+              We're always happy to have you! Open daily from 8:00 AM to 11:00 PM -
+              Your favorite cofee is waiting!
+            </h3>
+            <h4 class="xx">&copy;2025 Café Blueberry Elite. All rights reserved.</h4>
+          </div>
+        </footer>
+        <!-- Footer Closure -->
   </body>
 </html>

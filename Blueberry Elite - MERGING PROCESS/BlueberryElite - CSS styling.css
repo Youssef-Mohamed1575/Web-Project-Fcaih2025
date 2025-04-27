@@ -258,23 +258,174 @@ html {
 .slide4 .slide4text .MainButtondark {
   margin-left: 450px;
 }
-
 /* !!!MainPage CLOSURE */
+
 /* !!!Beginning MENU PAGE */
-
+.menu-heading1 {
+  text-transform: uppercase;
+}
+.menu-container {
+  margin-bottom: 90px;
+}
+.menu-head {
+  height: 120px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+.highlight_text {
+  color: #c7a17a;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*colums have the same width*/
+  margin-top: 0px;
+  gap: 30px; /* space between cols */
+  align-items: stretch;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.menu-item {
+  position: relative;
+  overflow: hidden;
+  display: flex; /* السعر والوصف والصورة جمب بعض */
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px 0;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  padding: 25px 20px;
+  height: 150px;
+  color: #000000;
+  background-color: transparent;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /*  الصورة بتحتفظ بحجمها بدون تكدس */
+}
+.menu-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--main-color);
+  transition: width 0.3s ease;
+  border-radius: 10px;
+  z-index: -1;
+}
+.menu-item:hover::before {
+  width: 100%;
+  z-index: -1;
+  background-color: #c7a17a;
+}
+.highlight_text:hover {
+  color: azure;
+}
+.menu-item:hover {
+  color: azure;
+}
+.menu-item:hover .price p {
+  /* هخلي ال hover يطبق علي السعر لما اعمل hover علي ال item*/
+  color: #333;
+}
+/* menu closure */
+/* search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 70px 90px;
+  position: absolute;
+  right: 0;
+}
+.search-container i {
+  font-size: 16px;
+}
+.search-container button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  left: 205px;
+}
+.search-container button:hover {
+  transform: scale(1.2);
+}
+.search-input {
+  display: block;
+  padding: 10px 29px 10px 15px;
+  width: 200px;
+  font-size: 16px;
+  border: #333 solid 1px;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+} /* search bar */
 /* !!!MENU PAGE CLOSURE */
+
 /* !!!BEGINNING REVIEWS */
+.Reviews-container {
+  margin-bottom: 90px;
+}
+.Reviews-heading {
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  text-shadow: 5px 7px 9px #cc9156;
+  font-size: 46px;
+  font-family: "Yellowtail";
+  color: #333;
+}
 
+.Reviews-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6rem;
+  gap: 4rem;
+}
+.Reviews-row .item {
+  background-color: #c7a17a;
+  text-align: center;
+  padding: 15px 15px 18px;
+  margin: 14px 14px 14px 14px;
+  border-width: 40px;
+  border-radius: 10%;
+  font-size: 19px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Reviews-row .item .img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -20%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+}
 /* !!!REVIEWS CLOSURE */
-/* !!!BEGINNING RESERVATIONS */
-/* CONTACT START */
 
-section {
+/* !!!BEGINNING RESERVATIONS */
+.Reservation-section {
   background-image: url("Reservation\ CONTENT/photo_2025-04-21_23-23-21.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
-  height: 140vh;
+  height: 100vh;
   position: relative;
   opacity: 0.75;
 }
@@ -402,6 +553,7 @@ section {
   border-bottom: 1px solid #fff;
   font-size: 16px;
   padding: 10px;
+  border-radius: 5px;
 }
 .login input[type="submit"] {
   border: none;
@@ -419,6 +571,7 @@ section {
 }
 .login input[type="submit"]:hover {
   background-color: var(--secondary-color);
+  color: white;
 }
 .login a {
   text-decoration: none;
@@ -706,3 +859,146 @@ a:hover {
   color: #a1754b;
 }
 /* !!!REGISTRATION CLOSURE */
+
+/* !!!BEGINNING FOOTER */
+.parent {
+  width: 100%;
+  background-color: #3e2c23;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item1 {
+  height: 65%;
+  width: 33.33%;
+  /* background-color: aquamarine; */
+  margin-top: 3%;
+}
+.item2 {
+  height: 65%;
+  width: 33.33%;
+  /* background-color:tomato; */
+  margin-top: 3%;
+}
+.item3 {
+  height: 65%;
+  width: 33.33%;
+  /* background-color: seagreen; */
+  margin-top: 3%;
+}
+.item4 {
+  width: 100%;
+  height: 35%;
+  background-color: #3e2c23;
+}
+.nwr {
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  margin-top: 6%;
+  margin-left: 10%;
+  line-height: 40px;
+  font-size: 20px;
+}
+.nwr:hover {
+  color: rgb(243, 83, 83);
+  cursor: pointer;
+}
+.nwr:hover,
+.nwr1:hover,
+.nwr2:hover,
+.nwr3:hover,
+.nwr4:hover,
+.nwr5:hover {
+  text-decoration: none;
+}
+.xx {
+  margin-left: 35%;
+  margin-top: 3%;
+}
+.child {
+  margin-top: 8%;
+  margin-left: 10%;
+}
+.title {
+  margin-left: 10%;
+}
+.nwr1 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  margin-top: 8%;
+  margin-left: 6.9%;
+  line-height: 40px;
+  /* color: #FF0000; */
+}
+.nwr1:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+.nwr2 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  margin-top: 8%;
+  margin-left: 10%;
+  line-height: 40px;
+  /* color: #1877f2; */
+}
+.nwr2:hover {
+  color: #1877f2;
+  cursor: pointer;
+}
+.nwr3 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  margin-top: 8%;
+  margin-left: 10%;
+  line-height: 40px;
+  /* color:#E1306C; */
+}
+
+.nwr3:hover {
+  color: #e1306c;
+  cursor: pointer;
+}
+
+.nwr4 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  margin-top: 8%;
+  margin-left: 10%;
+  line-height: 40px;
+  /* color: #1DA1F2; */
+}
+
+.nwr4:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.nwr5 {
+  transition: 0.5s;
+  text-decoration: none;
+  margin-top: 8%;
+  margin-left: 10%;
+  line-height: 40px;
+  /* color: #fff;
+  text-shadow: -2px 0 #69C9D0 , 2px 0 #EE1D52; */
+  color: white;
+}
+
+.nwr5:hover {
+  color: white;
+  color: #fff;
+  text-shadow: -2px 0 #69c9d0, 2px 0 #ee1d52;
+  cursor: pointer;
+}
+
+.xxx {
+  margin-left: 20%;
+}
+
+/* !!!FOOTER CLOSURE */
