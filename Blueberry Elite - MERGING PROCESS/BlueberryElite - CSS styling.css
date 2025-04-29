@@ -18,6 +18,9 @@ html {
   --main-color: #c7a17a;
   --margin-value: 75px;
   --secondary-color: #a1754b;
+  --black-color: #000000;
+  --style-font-yellowtail: "Yellowtail", cursive;
+  --title-font: cursive;
 }
 /* !!!GLOBAL RULES SET */
 
@@ -28,7 +31,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: var(--black-color);
   background-size: cover;
   background-position: center;
   z-index: 999;
@@ -51,9 +54,9 @@ html {
 .header .navbar a {
   position: relative;
   padding: 5px 15px;
-  color: #ecd4c9;
+  color: var(--main-color);
   text-decoration: none;
-  font-family: var(--header-font);
+  font-family: var(--title-font);
   font-size: 20px;
   margin: 0px 22px;
   border-radius: 15px;
@@ -170,7 +173,7 @@ html {
 .bolddark,
 .boldlight {
   font-size: 46px;
-  font-family: "Yellowtail", cursive;
+  font-family: var(--style-font-yellowtail);
   font-weight: bold;
 }
 .bolddark {
@@ -373,7 +376,6 @@ html {
   border: #333 solid 1px;
   border-radius: 5px;
   outline: none;
-  border-style: none;
 } /* search bar */
 /* !!!MENU PAGE CLOSURE */
 
@@ -446,13 +448,13 @@ html {
 
 .font {
   font-size: 46px;
-  font-family: "Yellowtail", cursive;
+  font-family: var(--style-font-yellowtail);
   color: black;
 }
 
 .small {
   font-size: 25px;
-  font-family: "Yellowtail", cursive;
+  font-family: var(--style-font-yellowtail);
   color: #230f08;
 }
 
@@ -504,7 +506,7 @@ html {
   border: none;
   transition: all 0.3s ease;
   font-size: 16px;
-  font-family: "Yellowtail", cursive;
+  font-family: var(--style-font-yellowtail);
   border-radius: 20px;
 }
 
