@@ -135,6 +135,12 @@ html {
   background-size: contain;
   background-repeat: repeat;
 }
+.Mainbodynight {
+  margin-top: -16px;
+  background-color: #1C0A00;
+  object-fit: cover;
+  z-index: -1;
+}
 .MainButtonlight {
   background-color: var(--main-color);
   color: #000;
@@ -182,6 +188,12 @@ html {
 .boldlight {
   color: black;
 }
+.boldnight {
+  font-size: 46px;
+  font-family: var(--style-font-yellowtail);
+  font-weight: bold;
+  color: #c7a17a;
+}
 .slide1 {
   align-items: left;
   padding-top: 50px;
@@ -194,17 +206,38 @@ html {
 }
 .slide1text {
   padding-left: 250px;
+  max-width: 800px;
+}
+.slide1textnight {
+  padding-left: 250px;
+  color: #CC9544 ;
 }
 .text1small {
 }
-.Slide1img {
+.Slide1imglight {
   margin-right: 140px;
+}
+.slide1imgnight{
+  margin-right: 140px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: none;
 }
 .slide2 {
   padding-bottom: 171px;
   display: flex;
   justify-content: space-between;
   background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+}
+.slide2night {
+  padding-bottom: 171px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #60350190;
   background-image: url(BgStatic.png);
   background-size: 100%;
   background-repeat: repeat;
@@ -227,10 +260,22 @@ html {
   display: flex;
   justify-content: space-between;
 }
+.slide3night {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+}
 .slide3text {
   margin-top: 120px;
   padding-left: 250px;
   font-size: large;
+}
+.slide3textnight {
+  margin-top: 120px;
+  padding-left: 250px;
+  font-size: large;
+  color: #CC9544;
 }
 .slide3img {
   margin-right: 10px;
@@ -238,6 +283,15 @@ html {
 }
 .slide4 {
   background-color: #a1754b;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.slide4night {
+  background-color: #60350190;
   background-image: url(BgStatic.png);
   background-size: 100%;
   background-repeat: repeat;
