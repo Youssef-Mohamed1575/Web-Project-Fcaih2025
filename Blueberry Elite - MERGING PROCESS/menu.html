@@ -28,11 +28,10 @@
     />
     <style>
       body {
-        background-color: #f1f1f1;
+        background-color: #ffffff;
       }
     </style>
   </head>
-
   <body>
     <!--  BEGINNING HEADER -->
     <div class="header">
@@ -49,18 +48,20 @@
     </div>
       </div>
       <script>
-        const header = document.querySelector(".header");
-        const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
-        const testImg = new Image();
-        testImg.onload = () => {
-          header.style.backgroundImage = `url(${imgPath})`;
-          header.style.backgroundColor = "";
-        };
-        testImg.onerror = () => {
-          header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
-          header.style.backgroundImage = "none";
-        };
-        testImg.src = imgPath;
+        const nightModeBtn = document.querySelector('.night-mode-btn');
+  
+            if (localStorage.getItem('darkMode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+        }
+            nightModeBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+      
+          if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+          } else {
+            localStorage.setItem('darkMode', 'disabled');
+          }
+        });
       </script>
       <!-- HEADER CLOSURE -->
     <!-- search bar -->

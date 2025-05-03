@@ -18,9 +18,10 @@ html {
   --main-color: #c7a17a;
   --margin-value: 75px;
   --secondary-color: #a1754b;
-  --black-color: #000000;
   --style-font-yellowtail: "Yellowtail", cursive;
   --title-font: cursive;
+  --header-footer-color: #000000;
+  --header-footer-dark-color: #b3907a;
 }
 /* !!!GLOBAL RULES SET */
 
@@ -31,10 +32,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--black-color);
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   z-index: 999;
+}
+.dark-mode .header {
+  background-color: var(--header-footer-color);
 }
 /* --Logo image */
 .header img {
@@ -52,6 +56,19 @@ html {
 }
 
 .header .navbar a {
+  position: relative;
+  padding: 5px 15px;
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: var(--title-font);
+  font-size: 21px;
+  margin: 0px 22px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+.darkmode .header .navbar a {
   position: relative;
   padding: 5px 15px;
   color: var(--main-color);
@@ -123,6 +140,13 @@ html {
   transition: transform 0.2s ease-in-out;
 }
 
+.dark-mode .navbar a {
+  color: white; /* Change link text to white in dark mode */
+}
+
+.dark-mode .navbar a:hover {
+  color: #000000;
+}
 /* !!!HEADER CLOSURE */
 
 /* !!!BEGINNING MainPage CONTENT */
@@ -135,13 +159,13 @@ html {
   background-size: contain;
   background-repeat: repeat;
 }
-.Mainbodynight {
+.dark-mode .Mainbody {
   margin-top: -16px;
-  background-color: #1C0A00;
+  background-color: #1c0a00;
   object-fit: cover;
   z-index: -1;
 }
-.MainButtonlight {
+.MainButton {
   background-color: var(--main-color);
   color: #000;
   outline: none;
@@ -155,8 +179,12 @@ html {
   transition: background-color 0.3s;
   margin-left: 10px;
 }
-.MainButtonlight:hover {
+.MainButton:hover {
   background-color: #a1754b;
+}
+
+.dark-mode .MainButton:hover {
+  background-color: #ff9900;
 }
 .MainButtondark {
   background-color: #070707;
@@ -176,8 +204,9 @@ html {
   background-color: #fefefec6;
   color: #070707;
 }
+
 .bolddark,
-.boldlight {
+.bold {
   font-size: 46px;
   font-family: var(--style-font-yellowtail);
   font-weight: bold;
@@ -185,10 +214,10 @@ html {
 .bolddark {
   color: #333;
 }
-.boldlight {
+.bold {
   color: black;
 }
-.boldnight {
+.dark-mode .bolddark {
   font-size: 46px;
   font-family: var(--style-font-yellowtail);
   font-weight: bold;
@@ -207,21 +236,31 @@ html {
 .slide1text {
   padding-left: 250px;
   max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.slide1textnight {
+.dark-mode .slide1text {
   padding-left: 250px;
-  color: #CC9544 ;
+  color: #cc9544;
 }
 .text1small {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .Slide1imglight {
   margin-right: 140px;
 }
-.slide1imgnight{
+.slide1imgnight {
   margin-right: 140px;
   margin-top: 70px;
   margin-bottom: 50px;
   display: none;
+}
+.dark-mode {
+  .Slide1imglight {
+    display: none;
+  }
+  .slide1imgnight {
+    display: block;
+  }
 }
 .slide2 {
   padding-bottom: 171px;
@@ -233,7 +272,7 @@ html {
   background-repeat: repeat;
   object-fit: cover;
 }
-.slide2night {
+.dark-mode .slide2 {
   padding-bottom: 171px;
   display: flex;
   justify-content: space-between;
@@ -255,12 +294,13 @@ html {
   max-width: 70%;
   font-size: 20px;
   color: #fefefec6;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .slide3 {
   display: flex;
   justify-content: space-between;
 }
-.slide3night {
+.dark-mode .slide3 {
   display: flex;
   justify-content: space-between;
   background-image: url(BgStatic.png);
@@ -270,12 +310,13 @@ html {
   margin-top: 120px;
   padding-left: 250px;
   font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.slide3textnight {
+.dark-mode .slide3text {
   margin-top: 120px;
   padding-left: 250px;
   font-size: large;
-  color: #CC9544;
+  color: #cc9544;
 }
 .slide3img {
   margin-right: 10px;
@@ -290,7 +331,7 @@ html {
   display: flex;
   justify-content: space-between;
 }
-.slide4night {
+.dark-mode .slide4 {
   background-color: #60350190;
   background-image: url(BgStatic.png);
   background-size: 100%;
@@ -312,7 +353,7 @@ html {
   font-size: 20px;
   color: #fefefec6;
 }
-.slide4 .slide4text .MainButtondark {
+.dark-mode .slide4 .slide4text .MainButton {
   margin-left: 450px;
 }
 /* !!!MainPage CLOSURE */
@@ -921,10 +962,14 @@ a:hover {
 /* !!!BEGINNING FOOTER */
 .parent {
   width: 100%;
-  background-color: #000000;
-  color: white;
+  background-color: var(--header-footer-dark-color);
+  color: black;
   display: flex;
   flex-wrap: wrap;
+}
+.dark-mode .parent {
+  background-color: var(--header-footer-color);
+  color: white;
 }
 .item1 {
   height: 65%;
@@ -947,17 +992,29 @@ a:hover {
 .item4 {
   width: 100%;
   height: 35%;
-  background-color: #000000;
+  background-color: var(--header-footer-dark-color);
+  color: black;
+}
+.dark-mode .item4 {
+  background-color: var(--header-footer-color);
+  color: white;
+}
+.dark-mode {
+  transition: 0;
 }
 .nwr {
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 6%;
   margin-left: 10%;
   line-height: 40px;
   font-size: 20px;
 }
+.dark-mode .nwr {
+  color: white;
+}
+
 .nwr:hover {
   color: rgb(243, 83, 83);
   cursor: pointer;
@@ -984,11 +1041,14 @@ a:hover {
 .nwr1 {
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 8%;
   margin-left: 6.9%;
   line-height: 40px;
   /* color: #FF0000; */
+}
+.dark-mode .nwr1 {
+  color: white;
 }
 .nwr1:hover {
   color: #ff0000;
@@ -997,11 +1057,14 @@ a:hover {
 .nwr2 {
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 8%;
   margin-left: 10%;
   line-height: 40px;
   /* color: #1877f2; */
+}
+.dark-mode .nwr2 {
+  color: white;
 }
 .nwr2:hover {
   color: #1877f2;
@@ -1010,13 +1073,15 @@ a:hover {
 .nwr3 {
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 8%;
   margin-left: 10%;
   line-height: 40px;
   /* color:#E1306C; */
 }
-
+.dark-mode .nwr3 {
+  color: white;
+}
 .nwr3:hover {
   color: #e1306c;
   cursor: pointer;
@@ -1025,11 +1090,14 @@ a:hover {
 .nwr4 {
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
   margin-top: 8%;
   margin-left: 10%;
   line-height: 40px;
   /* color: #1DA1F2; */
+}
+.dark-mode .nwr4 {
+  color: white;
 }
 
 .nwr4:hover {
@@ -1045,9 +1113,11 @@ a:hover {
   line-height: 40px;
   /* color: #fff;
   text-shadow: -2px 0 #69C9D0 , 2px 0 #EE1D52; */
+  color: black;
+}
+.dark-mode .nwr5 {
   color: white;
 }
-
 .nwr5:hover {
   color: white;
   color: #fff;

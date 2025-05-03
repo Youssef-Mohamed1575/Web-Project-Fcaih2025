@@ -28,24 +28,10 @@
       <a href="Reviews.html">Reviews</a>
       <a href="Reservation.html">Reservations</a>
       <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
-      <button class="night-mode-btn"></button>
     </div>
   </div>
     </div>
-    <script>
-      const header = document.querySelector(".header");
-      const imgPath = undefined; // THE HEADER BACKGROUND IMAGE PATH. Change the (undefined) value with "ImagePath"
-      const testImg = new Image();
-      testImg.onload = () => {
-        header.style.backgroundImage = `url(${imgPath})`;
-        header.style.backgroundColor = "";
-      };
-      testImg.onerror = () => {
-        header.style.backgroundColor = "#000000"; // Header background color, in case NO IMAGE IS SET
-        header.style.backgroundImage = "none";
-      };
-      testImg.src = imgPath;
-    </script>
+
     <!-- HEADER CLOSURE -->
     </body>
     <body>
