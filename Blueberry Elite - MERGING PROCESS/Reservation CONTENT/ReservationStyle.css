@@ -180,6 +180,8 @@ body {
     
     background-color: #a1754b;
     border-radius: 20PX;
+    width: 100px;
+   
   }
   
   #contact .row .contact-content {
@@ -189,6 +191,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     border-radius: 20px;
+  
   }
   
   #contact .row .contact-content form input,
