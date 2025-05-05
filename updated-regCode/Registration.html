@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="BlueberryElite - CSS styling.css" />
+    <link rel="icon" href="HEADER CONTENT/LOGOICON2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script>
+      document.getElementById("night-mode-btn").addEventListener("click",function darkmodefn(){
+        
+        document.body.classList.toggle("darkmode");
+    })
+    </script>
+          <style>
+        
+
+            body {
+        position: relative;
+        z-index: 1;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        background-image: url(RegisterPage\ CONTENT/Registration-background.webp);
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        z-index: -1;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body.darkmode .Registrationfieldset {
+        background-color: #131518;
+      }
+      body.darkmode .inputs{
+        background-color: #131518;
+        border-color: #dbdada;
+        
+        
+      }
+      body.darkmode .resgistrationLogin{
+        transition-duration: 0s;
+        color: #f1f1f1;
+      }
+      body.darkmode .register{
+        color: #f1f1f1;
+        
+      }
+      body.darkmode::before {
+        content: "";
+        position: fixed;
+        background-image: url(RegisterPage\ CONTENT/Registration-background.webp);
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: -1;
+      }
+      body.darkmode .name{
+        color: #f1f1f1;
+      }
+      body.darkmode .formspaces{
+        color: #f1f1f1;
+      }
+      body.darkmode .terms-not{
+        color: #f1f1f1;
+      }
+      body.darkmode .regbackground{
+        background-color: #a1754b;
+      }
+      body.darkmode .createanacc{
+        color: #ffffff;
+      }
+      
+      </style>
+  </head>
+  <body>
+    <!--  BEGINNING HEADER -->
+  <div class="header">
+    <div class="logo">
+      <a href="BlueberryElite.html"><img src="HEADER CONTENT/LOGO4.png" alt="BLUEBERRY ELITE"></a>
+    </div>
+    <div class="navbar">
+      <a href="menu.html">Menu</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Reservation.html">Reservations</a>
+      <button onclick="window.location.href='Login.html'" class="SignPage">Sign in</button>
+      <button class="night-mode-btn" id="night-mode-btn"></button>
+    </div>
+  </div>
+    </div>
+
+   <script>
+    function submissionAlert(){
+      alert("Your account has been created sucessfully");
+      return true;
+    }
+    document.getElementById("night-mode-btn").addEventListener("click",function darkmodefn(){
+        
+        document.body.classList.toggle("darkmode");
+        const img=document.getElementById("regimg");
+        if (document.body.classList.contains("darkmode"))
+        { img.src="RegisterPage CONTENT/darkmodereg.jpg";}
+        else {img.src="RegisterPage CONTENT/Registration-image.png"}
+    })
+
+   </script>
+    
+
+    <!-- HEADER CLOSURE -->
+    <!-- REGISTRATION FORM STARTS HERE -->
+    <form action="" method="post" onsubmit="return submissionAlert()">
+      <fieldset class="Registrationfieldset">
+         <div class="regbackground"> <p class="createanacc"> Create an account</p> </div>
+          <!-- lw 3yzenha more fun mmkn ntktb create an account and join our membership/community   -->
+          <img src="RegisterPage CONTENT/Registration-image.png" alt="" class="resgistrationImage" id="regimg">
+          <div >
+          <pre>
+    <label for="first name" class="name">First name</label>                         <label for="last name" class="name">Last name</label>
+  <input type="text" id="First name" required class="inputs" class="inname" placeholder="First name" name="first-name">        <input type="text" id="last name" required class="inputs" class="inname" placeholder="Last name" name="last-name">
+          </pre>
+          </div>
+                  <div >
+                    <label for="username" class="formspaces">Username</label>
+                    <input type="text" id="username" required placeholder="Username" class="inputs" name="username">
+                    </div>
+                    <br>
+                    <div >
+                    <label for="age" class="formspaces">Age (optional)</label>
+                    <input type="number" id="age" class="inputs" placeholder="Age" name="age">
+                    </div>
+                    <div >
+                    <br>
+                    <label for="email" class="formspaces">Email Address</label>
+                    <input type="email" required class="inputs" id="email" placeholder="Email Address" name="email">
+                    </div>
+                    <br>
+                    <div >
+                        <label for="phone-no" class="formspaces">Phone number</label>
+                        <input type="tel" id="phone-no" required placeholder="e.g. +20 1X XXX XXXX" class="inputs" name="phone-no">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password" class="formspaces">Password</label>
+                        <input type="password" required minlength="8" maxlength="30" class="inputs" placeholder="Password" id="registrationPassword" name="pass">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" class="formspaces" name="terms">
+                        <label for="terms" class="terms-not">I agree to the terms & conditions</label>
+                        
+                    </div>
+                    <br>
+                    <div >
+                        <input type="checkbox" class="formspaces">
+                        <label for="notifications" name="notifications" class="terms-not">Receive notifications from our website</label>
+                    </div>
+                    <br>
+                    <br>
+                    <pre class="register">
+                         <input type="submit" value="Register" class="registerbtn">
+        
+                                     Already have an account? <a href="Login.html" class="resgistrationLogin">Login</a>
+                    </pre>
+                </fieldset>
+            </form>
+    <!-- REGISTRATION FORM ENDS HERE -->
+    <!-- NO FOOTER IN THE SIGN IN PAGE -->
+</body>
+</html>
