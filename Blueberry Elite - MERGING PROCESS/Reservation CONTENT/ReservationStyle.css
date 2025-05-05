@@ -183,7 +183,7 @@ body {
   }
   
   #contact .row .contact-content {
-    background-color:#c7a17a ;
+    background-color:#a1754b ;
     padding: 2.5rem;
     font-size: 26px;
     text-transform: uppercase;
@@ -218,7 +218,7 @@ body {
   }
   
   #contact .row .contact-content form .btn-submit:hover {
-    background-color: #765341;
+    background-color: #c7a17a;
   }
   #contact .map iframe { 
     width: 100%;
