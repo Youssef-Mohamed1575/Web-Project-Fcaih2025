@@ -135,9 +135,9 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    height: 140vh;
+    height: 145vh;
     position: relative; 
-    opacity: 0.75;
+    opacity: 0.9;
   }
   
   .section-content {
