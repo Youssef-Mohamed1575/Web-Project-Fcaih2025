@@ -135,9 +135,7 @@ body {
 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
-}
+    box-sizing: border-box;}
 
 .Complaint_body{
     background-color:#bf762e41;
@@ -239,6 +237,7 @@ border-radius: 15px;
 box-shadow:0 15px 50px rgb(0, 0, 0, .5) ;
 
 }
+
 button:hover{
     background-color: #ac8c67;
     border-color: #ac8c67;

@@ -746,8 +746,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  padding-left: 40px;
   margin: 60px;
-  border-radius: 5px;
+  border-radius: 30px;
   border-color: #1f2226;
   box-shadow: 0 15px 50px rgb(0, 0, 0, 0.5);
   font-size: 21px;
@@ -759,17 +760,28 @@ a:hover {
   border-color: #bf762e41;
   padding: 10px 15px 10px 15px;
   margin-bottom: 10px;
+  margin-top: 10px;
   width: 90%;
   justify-content: center;
   align-items: center;
   background-color: #fbfbfb;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 16px;}
+  
+.nameLabel{
+  margin-left: 10px;
 }
+.Complaint-container #email {
+  width: 90%;
+}
+
+
 .FeedbackLabels {
-  margin-left: 7px;
+  margin-left: 10px;
+  
 }
+
 
 .complaint_select_box {
   background-color: #fbfbfb;
@@ -777,7 +789,7 @@ a:hover {
   border-color: #bf762e41;
   padding: 5px 30px 5px 10px;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   width: 90%;
   height: 40px;
   justify-content: center;
@@ -785,6 +797,7 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
+
 
 .complaintTextArea {
   background-color: #fbfbfb;
@@ -795,21 +808,22 @@ a:hover {
   border-color: #bf762e41;
   padding-left: 10px;
   padding-top: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
 .complaintSend {
-  background-color: #c7a17a;
+  background-color:#b1855ac4;
   font-size: 20px;
   cursor: pointer;
   border: solid;
   width: 90%;
   padding: 8px;
+  margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0 15px 50px rgb(0, 0, 0, 0.5);
   font-family: Arial, Helvetica, sans-serif;
@@ -833,6 +847,12 @@ a:hover {
 .complaintSpan {
   color: #1f2226;
 }
+
+
+
+
+
+
 /* !!!Suggestions/Complaints CLOSURE */
 
 /* !!!BEGINNING REGISTRATION*/

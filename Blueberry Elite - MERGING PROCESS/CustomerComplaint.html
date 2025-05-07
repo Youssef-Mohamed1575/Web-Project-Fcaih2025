@@ -10,6 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="CustomerComplaint.css">
+
+
+    <style>
+              
+              body {
+        background-color: #ffffff;
+      }    
+      body.dark-mode{
+        background-color:#765c477c; 
+             
+      }
+      body.dark-mode   .complaintSend {
+      background-color: #b1855ac4;
+      }
+    
+      body.dark-mode .complaintSend:hover{
+        background-color:#cba585b8 ;
+      }
+    body.dark-mode .Complaint-container{
+      background-color:#342519ee;
+    }
+  
+    body.dark-mode .complaintHead {
+      color:#ffd9a8c4;}
+      body.dark-mode .FeedbackLabels{
+        color:#ffd9a8c4;
+      }
+      
+    </style>
+
+
+    
   </head>
   <body>
     <!--  BEGINNING HEADER -->
@@ -22,13 +55,34 @@
       <a href="Reviews.html">Reviews</a>
       <a href="Reservation.html">Reservations</a>
       <button onclick="window.location.href='Login.html'" class="SignPage">Sign up</button>
+      <button  id="night-mode-btn" class="night-mode-btn"></button>
     </div>
   </div>
     </div>
+
+    <script>
+     
+      const nightModeBtn = document.querySelector('.night-mode-btn');
+            if (localStorage.getItem('darkMode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+        }
+            nightModeBtn.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+      
+          if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+          } else {
+            localStorage.setItem('darkMode', 'disabled');
+          }
+        });
+
     </script>
+
     <!-- HEADER CLOSURE -->
             <!-- Complaint form start -->
+
             <div class="Complaint_body">
+
               <div class="Complaint-container">
                   <!--  form title -->
               <h2 class="complaintHead">Feedback Form</h2>  
@@ -40,12 +94,12 @@
                 </div>
                 <!-- email -->
                 <div class="email">
-                  <label for="email" class="FeedbackLabels">Email:</label><br>
+                  <label for="email" class="FeedbackLabels" class="emailLabel">Email:</label><br>
                   <input class="complaintInput" type="email" id="email"  placeholder="Enter your email address"  required><br>
                   </div>
                 <!-- category of complaint -->
                 <div class="option">
-                      <label for="complaintType" class="FeedbackLabels">What caused your dissatisfcation?</label><br>
+                      <label for="complaintType" class="FeedbackLabels" class="complaintType">What caused your dissatisfcation?</label><br>
                       <select  class="complaint_select_box"   name="complaintType" id="complaintType"  required><br>
               
                       <option value=" disabledselected">Select an option</option>
