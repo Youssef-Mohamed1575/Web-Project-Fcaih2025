@@ -137,7 +137,7 @@ body {
     background-position: center;
     height: 148vh;
     position: relative; 
-    opacity: 0.9;
+    opacity: 0.75;
   }
   
   .section-content {
@@ -178,14 +178,14 @@ body {
   
   #contact .row .map {
     
-    background-color: #a1754b;
+    background-color: #F5E1C8;
     border-radius: 20PX;
     width: 100px;
    
   }
   
   #contact .row .contact-content {
-    background-color:#a1754b ;
+    background-color:#F5E1C8 ;
     padding: 2.5rem;
     font-size: 26px;
     text-transform: uppercase;
