@@ -860,9 +860,7 @@ body.dark-mode::before {
 
 .Registrationfieldset{
   font-family: "Poppins", sans-serif;
-  margin-left: 330px ;
-  margin-top:70px ;
-  margin-bottom: 30px;
+  margin : 9vh auto;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   width: 900px;
