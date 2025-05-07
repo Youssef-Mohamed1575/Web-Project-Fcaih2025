@@ -860,21 +860,26 @@ body.dark-mode::before {
 
 /* !!!BEGINNING REGISTRATION*/
 
-.RegisterationFieldset {
+./* !!!BEGINNING REGISTRATION*/
+
+.Registrationfieldset{
   font-family: "Poppins", sans-serif;
-  margin: 9vh auto;
+  margin-left: 330px ;
+  margin-top:70px ;
+  margin-bottom: 30px;
+  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   width: 900px;
-  border-radius: 25px;
+  border-radius:25px;
   border-width: 3px;
   background-color: #fbfbfb;
   border: none;
-  outline: none;
+
 }
 .registerbtn {
   font-family: "Poppins", sans-serif;
-  width: 200px;
-  height: 40px;
+  width : 200px;
+  height: 40px; 
   margin-left: 70px;
   margin-top: -10px;
   background-color: #c7a17a;
@@ -885,19 +890,23 @@ body.dark-mode::before {
   font-size: 15px;
   color: #1f2226;
   transition: 0.3s;
+  
 }
 .registerbtn:hover {
   background-color: #a1754b;
 }
-.Registration-image {
-  margin-left: 0px;
+
+.resgistrationImage{
+  margin-left:0px;
   width: 350px;
-  margin-top: -10px;
+  margin-top: -20px;
   display: inline-flex;
   float: left;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
   z-index: 4;
 }
+
 
 .createanacc {
   font-family: "Poppins", sans-serif;
@@ -908,6 +917,7 @@ body.dark-mode::before {
   text-align: center;
   width: 100%;
   color: #1f2226;
+  
 }
 
 .formspaces {
@@ -919,25 +929,20 @@ body.dark-mode::before {
   font-family: "Poppins", sans-serif;
   margin-left: 30px;
 }
-.fname {
+.name{
   font-family: "Poppins", sans-serif;
-  margin: 0px;
+  margin-left: -12px;
   font-size: larger;
 }
-.lname {
-  font-family: "Poppins", sans-serif;
-  margin-left: 153px;
-  font-size: larger;
-}
-.inputs {
+.inputs{
   width: 200px;
+  border-radius: 5px;
   height: 33px;
   padding-left: 5px;
-  border-color: #1f2226;
-  outline: none;
+  border-color:#1f2226;
 }
 
-#username {
+#username  {
   font-family: "Poppins", sans-serif;
   padding-left: 10px;
   width: 264.5px;
@@ -945,21 +950,22 @@ body.dark-mode::before {
 }
 #email {
   font-family: "Poppins", sans-serif;
-  padding-left: 10px;
+  padding-left: 10px;  
   width: 264px;
   margin-left: 3px;
 }
-#age {
-  width: 264px;
-  margin-left: 6.75px;
-  padding-left: 10px;
+#age
+{
+width: 264px;
+margin-left: 6.75px;
+padding-left: 10px;
 }
 #phone-no {
-  width: 265px;
+width: 265px;
 }
-#Registration-password {
-  width: 266.5px;
-  margin-left: 40px;
+#registrationPassword {
+width: 266.5px;
+margin-left: 40px;
 }
 .regbackground {
   font-family: "Poppins", sans-serif;
@@ -973,17 +979,18 @@ body.dark-mode::before {
   position: relative;
   margin-bottom: 4px;
 }
-.Registration-Login {
-  text-decoration: none;
-  color: #1f2226;
-  font-weight: bold;
-  transition-duration: 0.3s;
+.resgistrationLogin
+{
+text-decoration: none;
+color: #1f2226 ;
+font-weight:bold;
+transition-duration:0.3s ;
 }
-.Registration-Login:hover {
-  color: #a1754b;
+.resgistrationLogin:hover{
+color: #a1754b;
+
 }
 /* !!!REGISTRATION CLOSURE */
-
 /*Footer Start*/
 .columns{
   display: flex;
