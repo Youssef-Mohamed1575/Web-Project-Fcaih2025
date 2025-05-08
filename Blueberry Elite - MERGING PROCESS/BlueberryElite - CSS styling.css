@@ -773,8 +773,9 @@ body.dark-mode::before {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  padding-left: 40px;
   margin: 60px;
-  border-radius: 5px;
+  border-radius: 30px;
   border-color: #1f2226;
   box-shadow: 0 15px 50px rgb(0, 0, 0, 0.5);
   font-size: 21px;
@@ -786,6 +787,7 @@ body.dark-mode::before {
   border-color: #bf762e41;
   padding: 10px 15px 10px 15px;
   margin-bottom: 10px;
+  margin-top: 10px;
   width: 90%;
   justify-content: center;
   align-items: center;
@@ -794,19 +796,33 @@ body.dark-mode::before {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-.FeedbackLabels {
-  margin-left: 7px;
+
+.Complaint-container #name{
+  margin-left: 10px;
+}
+.Complaint-container #email {
+  width: 90%;
+  /* margin-left: 5px; */
+  padding-left: 15px;
 }
 
+.FeedbackLabels {
+  margin-left: 15px;
+}
+
+.nameLabel{
+  margin-left: 10px ;
+ 
+}
 .complaint_select_box {
   background-color: #fbfbfb;
   border-radius: 10px;
   border-color: #bf762e41;
   padding: 5px 30px 5px 10px;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
   width: 90%;
-  height: 40px;
+  height: 44px;
   justify-content: center;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -824,14 +840,14 @@ body.dark-mode::before {
   padding-top: 5px;
   margin-top: 5px;
   padding: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
 .complaintSend {
-  background-color: #c7a17a;
+  background-color: #b1855ac4;
   font-size: 20px;
   cursor: pointer;
   border: solid;
