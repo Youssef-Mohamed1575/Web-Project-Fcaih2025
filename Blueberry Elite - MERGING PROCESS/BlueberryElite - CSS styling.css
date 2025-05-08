@@ -520,17 +520,17 @@ html {
 /* !!!REVIEWS CLOSURE */
 
 /* !!!BEGINNING RESERVATIONS */
-.reservation-container {
+/*.reservation-container {
   /* padding-bottom: 100px; */
-}
+
 .Reservation-section {
   background-image: url("Reservation\ CONTENT/photo_2025-04-21_23-23-21.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
-  height: 120vh;
+  height: 125vh;
   position: relative;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .section-content {
@@ -568,8 +568,9 @@ html {
 }
 
 #contact .row .map {
-  background-color: #a1754b;
+  background-color: #c7a17a;
   border-radius: 20px;
+  height: 710px;
 }
 
 #contact .row .contact-content {
@@ -579,6 +580,7 @@ html {
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 20px;
+  width: 400px;
 }
 
 #contact .row .contact-content form input,
@@ -609,13 +611,14 @@ html {
 }
 
 #contact .row .contact-content form .btn-submit:hover {
-  background-color: #765341;
+  background-color: #1c0a00;
 }
 #contact .map iframe {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 710px;
   border-radius: 20px;
 }
+
 /* !!!RESERVATIONS CLOSURE */
 /* !!!BEGINNING SIGN-IN PAGE */
 .login {
@@ -736,6 +739,7 @@ body.dark-mode::before {
   background-color: rgba(0, 0, 0, 0.507);
 }
 /* !!!SIGN-IN PAGE CLOSURE */
+
 /* !!!BEGINNING Suggestions/Complaints */
 .Complaint_body {
   background-color: #bf762e41;
@@ -856,9 +860,9 @@ body.dark-mode::before {
 .complaintSpan {
   color: #1f2226;
 }
+
 /* !!!Suggestions/Complaints CLOSURE */
 
-/* !!!BEGINNING REGISTRATION*/
 
 /* !!!BEGINNING REGISTRATION*/
 
