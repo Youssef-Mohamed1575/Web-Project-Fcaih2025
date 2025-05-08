@@ -89,6 +89,23 @@
         </div>
       </form>
     </div>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        const username = document.getElementById("user").value.trim();
+        const password = document.getElementById("password").value.trim();
+        if (username === "" || password === "") {
+          alert("Please fill in all fields.");
+          e.preventDefault(); 
+          return;
+        }
+    
+        if (password.length < 8) {
+          alert("Password must be at least 8 characters.");
+          e.preventDefault();
+          return;
+        }
+      });
+    </script>
     <!-- Sign in page closure -->
     <!-- NO FOOTER IN THE SIGN IN PAGE -->
   </body>
