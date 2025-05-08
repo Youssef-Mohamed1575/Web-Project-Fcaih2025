@@ -739,6 +739,7 @@ body.dark-mode::before {
   background-color: rgba(0, 0, 0, 0.507);
 }
 /* !!!SIGN-IN PAGE CLOSURE */
+
 /* !!!BEGINNING Suggestions/Complaints */
 .Complaint_body {
   background-color: #bf762e41;
@@ -859,9 +860,9 @@ body.dark-mode::before {
 .complaintSpan {
   color: #1f2226;
 }
+
 /* !!!Suggestions/Complaints CLOSURE */
 
-/* !!!BEGINNING REGISTRATION*/
 
 /* !!!BEGINNING REGISTRATION*/
 
