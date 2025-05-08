@@ -359,6 +359,9 @@ html {
 /* !!!MainPage CLOSURE */
 
 /* !!!Beginning MENU PAGE */
+.menu-container {
+  flex: 1;
+}
 .menu-heading1 {
   text-transform: uppercase;
 }
@@ -689,7 +692,7 @@ a:hover {
 .remember-me {
   display: flex;
   align-items: center;
-  gap:8px;
+  gap: 8px;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -706,12 +709,10 @@ a:hover {
 }
 /* !!! BEGINNING SIGN-IN PAGE DARK-MOOD */
 body.dark-mode .login {
- 
-  background-color:#3b2f28fb;
- }
+  background-color: #3b2f28fb;
+}
 body.dark-mode .login h1 {
   color: #d1b07a;
-  
 }
 
 body.dark-mode a,
@@ -719,7 +720,6 @@ body.dark-mode label {
   color: #d1b07a;
 }
 body.dark-mode .Register p {
- 
   color: #d1b07a;
 }
 body.dark-mode::before {
@@ -729,7 +729,7 @@ body.dark-mode::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('imge.jpeg');
+  background-image: url("imge.jpeg");
   opacity: 0.5;
   z-index: -1;
   background-size: cover;
@@ -862,24 +862,23 @@ body.dark-mode::before {
 
 /* !!!BEGINNING REGISTRATION*/
 
-.Registrationfieldset{
+.Registrationfieldset {
   font-family: "Poppins", sans-serif;
-  margin-left: 330px ;
-  margin-top:70px ;
+  margin-left: 330px;
+  margin-top: 70px;
   margin-bottom: 30px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   width: 900px;
-  border-radius:25px;
+  border-radius: 25px;
   border-width: 3px;
   background-color: #fbfbfb;
   border: none;
-
 }
 .registerbtn {
   font-family: "Poppins", sans-serif;
-  width : 200px;
-  height: 40px; 
+  width: 200px;
+  height: 40px;
   margin-left: 70px;
   margin-top: -10px;
   background-color: #c7a17a;
@@ -890,14 +889,13 @@ body.dark-mode::before {
   font-size: 15px;
   color: #1f2226;
   transition: 0.3s;
-  
 }
 .registerbtn:hover {
   background-color: #a1754b;
 }
 
-.resgistrationImage{
-  margin-left:0px;
+.resgistrationImage {
+  margin-left: 0px;
   width: 350px;
   margin-top: -20px;
   display: inline-flex;
@@ -906,7 +904,6 @@ body.dark-mode::before {
   border-bottom-right-radius: 0px;
   z-index: 4;
 }
-
 
 .createanacc {
   font-family: "Poppins", sans-serif;
@@ -917,7 +914,6 @@ body.dark-mode::before {
   text-align: center;
   width: 100%;
   color: #1f2226;
-  
 }
 
 .formspaces {
@@ -929,20 +925,20 @@ body.dark-mode::before {
   font-family: "Poppins", sans-serif;
   margin-left: 30px;
 }
-.name{
+.name {
   font-family: "Poppins", sans-serif;
   margin-left: -12px;
   font-size: larger;
 }
-.inputs{
+.inputs {
   width: 200px;
   border-radius: 5px;
   height: 33px;
   padding-left: 5px;
-  border-color:#1f2226;
+  border-color: #1f2226;
 }
 
-#username  {
+#username {
   font-family: "Poppins", sans-serif;
   padding-left: 10px;
   width: 264.5px;
@@ -950,22 +946,21 @@ body.dark-mode::before {
 }
 #email {
   font-family: "Poppins", sans-serif;
-  padding-left: 10px;  
+  padding-left: 10px;
   width: 264px;
   margin-left: 3px;
 }
-#age
-{
-width: 264px;
-margin-left: 6.75px;
-padding-left: 10px;
+#age {
+  width: 264px;
+  margin-left: 6.75px;
+  padding-left: 10px;
 }
 #phone-no {
-width: 265px;
+  width: 265px;
 }
 #registrationPassword {
-width: 266.5px;
-margin-left: 40px;
+  width: 266.5px;
+  margin-left: 40px;
 }
 .regbackground {
   font-family: "Poppins", sans-serif;
@@ -979,20 +974,19 @@ margin-left: 40px;
   position: relative;
   margin-bottom: 4px;
 }
-.resgistrationLogin
-{
-text-decoration: none;
-color: #1f2226 ;
-font-weight:bold;
-transition-duration:0.3s ;
+.resgistrationLogin {
+  text-decoration: none;
+  color: #1f2226;
+  font-weight: bold;
+  transition-duration: 0.3s;
 }
-.resgistrationLogin:hover{
-color: #a1754b;
-
+.resgistrationLogin:hover {
+  color: #a1754b;
 }
 /* !!!REGISTRATION CLOSURE */
 /*Footer Start*/
-.columns{
+
+.columns {
   display: flex;
   padding-bottom: 20px;
   width: 100%;
@@ -1001,7 +995,7 @@ color: #a1754b;
   font-weight: 100;
   font-size: 15px;
 }
-.dark-mode .columns{
+.dark-mode .columns {
   display: flex;
   padding-bottom: 20px;
   width: 100%;
@@ -1012,7 +1006,7 @@ color: #a1754b;
 }
 .parent {
   width: 100%;
-  background-color:var(--header-footer-color) ;
+  background-color: var(--header-footer-color);
   display: flex;
   flex-wrap: wrap;
   padding-top: 10px;
@@ -1030,7 +1024,7 @@ color: #a1754b;
   margin-top: 0;
   margin-left: 65px;
 }
-.column1 .title{
+.column1 .title {
   text-align: left;
 }
 .column2 {
@@ -1038,7 +1032,7 @@ color: #a1754b;
   margin-top: 0;
   text-align: center;
 }
-.dark-mode .column2 .footer-title{
+.dark-mode .column2 .footer-title {
   text-align: center;
 }
 .column3 {
@@ -1051,7 +1045,7 @@ color: #a1754b;
 .bottom-row {
   width: 100%;
   height: 35%;
-  background-color: var(--header-footer-color) ;
+  background-color: var(--header-footer-color);
   color: var(--main-color);
   margin-top: 0;
   margin-bottom: 20px;
@@ -1084,20 +1078,20 @@ color: #a1754b;
 
 .footer-text {
   transition: 0.5s;
-  color:#fff;
+  color: #fff;
 }
-.dark-mode .footer-text{
+.dark-mode .footer-text {
   color: #fff;
 }
 .footer-title {
- margin-bottom: 10px;
- margin-bottom: 10px;
- color: var(--main-color);
- font-size: 40px;
- font-family: var(--style-font-yellowtail);
- transition: color 0.3s ease;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  color: var(--main-color);
+  font-size: 40px;
+  font-family: var(--style-font-yellowtail);
+  transition: color 0.3s ease;
 }
-.dark-mode .footer-title{
+.dark-mode .footer-title {
   color: #cc9544;
   text-align: left;
   margin-bottom: 10px;
@@ -1137,7 +1131,7 @@ color: #a1754b;
   color: #fff;
   line-height: 40px;
 }
-.dark-mode .instagram{
+.dark-mode .instagram {
   color: white;
 }
 .instagram:hover {
@@ -1177,26 +1171,25 @@ color: #a1754b;
 }
 
 .outrofooter,
-.copyright{
+.copyright {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 .outrofooter {
   margin-left: 390px;
-  margin-right: 400px ;
+  margin-right: 400px;
   border-top: 2px solid #fff;
   padding-top: 10px;
 }
-.copyright{
+.copyright {
   margin-left: 35%;
   margin-top: 5px;
   margin-left: 570px;
 }
 footer h1,
 footer h3,
-footer h4{
+footer h4 {
   margin: 0;
   padding: 0;
 }
 /* !!!FOOTER CLOSURE */
-
