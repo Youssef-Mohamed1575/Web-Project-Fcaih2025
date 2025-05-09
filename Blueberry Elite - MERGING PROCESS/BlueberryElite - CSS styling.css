@@ -64,7 +64,6 @@ html {
   font-size: 21px;
   margin: 0px 22px;
   border-radius: 15px;
-  overflow: hidden;
   transition: color 0.3s ease;
   z-index: 1;
 }
@@ -90,7 +89,6 @@ html {
   height: 100%;
   width: 0;
   background-color: var(--main-color);
-  z-index: 0;
   transition: width 0.2s ease;
   border-radius: 10px;
   z-index: -1;
@@ -98,7 +96,6 @@ html {
 
 .header .navbar a:hover::before {
   width: 100%;
-  z-index: -1;
 }
 
 .header .navbar a:hover {
@@ -115,7 +112,7 @@ html {
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 .header .navbar .SignPage:hover {
@@ -141,11 +138,11 @@ html {
 }
 
 .dark-mode .navbar a {
-  color: white; /* Change link text to white in dark mode */
+  color: white; /* Changes link text color to white in dark-mode (WITH NO ACTION) */
 }
 
 .dark-mode .navbar a:hover {
-  color: #000000;
+  color: #000000; /* Changes link text color (ON HOVER), in dark-mode
 }
 /* !!!HEADER CLOSURE */
 
@@ -797,7 +794,7 @@ body.dark-mode::before {
   font-size: 16px;
 }
 
-.Complaint-container #name{
+.Complaint-container #name {
   margin-left: 10px;
 }
 .Complaint-container #email {
@@ -810,9 +807,8 @@ body.dark-mode::before {
   margin-left: 15px;
 }
 
-.nameLabel{
-  margin-left: 10px ;
- 
+.nameLabel {
+  margin-left: 10px;
 }
 .complaint_select_box {
   background-color: #fbfbfb;
@@ -878,7 +874,6 @@ body.dark-mode::before {
 }
 
 /* !!!Suggestions/Complaints CLOSURE */
-
 
 /* !!!BEGINNING REGISTRATION*/
 
