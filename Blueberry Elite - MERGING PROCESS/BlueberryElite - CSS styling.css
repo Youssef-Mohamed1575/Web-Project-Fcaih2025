@@ -142,8 +142,9 @@ html {
 }
 
 .dark-mode .navbar a:hover {
-  color: #000000; /* Changes link text color (ON HOVER), in dark-mode
-}
+  color: #000000;
+} /* Changes link text color (ON HOVER), in dark-mode
+
 /* !!!HEADER CLOSURE */
 
 /* !!!BEGINNING MainPage CONTENT */
