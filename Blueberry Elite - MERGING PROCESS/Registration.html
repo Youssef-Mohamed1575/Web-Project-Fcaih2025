@@ -79,7 +79,13 @@
       body.darkmode .createanacc{
         color: #ffffff;
       }
-      
+      body.darkmode .header .navbar a {
+      color: white ;
+      font-size: 21px;
+      }
+      body.darkmode .header .navbar a:hover {
+      color: black ;
+      }
       </style>
   </head>
   <body>
@@ -99,10 +105,10 @@
     </div>
 
    <script>
-    function submissionAlert(){
-      alert("Your account has been created sucessfully");
-      return true;
-    }
+    // function submissionAlert(){
+    //   alert("Your account has been created sucessfully");
+    //   return true;
+    // }
     document.getElementById("night-mode-btn").addEventListener("click",function darkmodefn(){
         
         document.body.classList.toggle("darkmode");
@@ -110,14 +116,13 @@
         if (document.body.classList.contains("darkmode"))
         { img.src="RegisterPage CONTENT/darkmodereg.jpg";}
         else {img.src="RegisterPage CONTENT/Registration-image.png"}
-    })
-
+    })                    
    </script>
     
 
     <!-- HEADER CLOSURE -->
     <!-- REGISTRATION FORM STARTS HERE -->
-    <form action="" method="post" onsubmit="return submissionAlert()">
+    <form action="" method="post" id="registrationForm">
       <fieldset class="Registrationfieldset">
          <div class="regbackground"> <p class="createanacc"> Create an account</p> </div>
           <!-- lw 3yzenha more fun mmkn ntktb create an account and join our membership/community   -->
@@ -139,28 +144,28 @@
                     </div>
                     <div >
                     <br>
-                    <label for="email" class="formspaces">Email Address</label>
-                    <input type="email" required class="inputs" id="email" placeholder="Email Address" name="email">
+                    <label for="email" class="formspaces" >Email Address</label>
+                    <input  required class="inputs" id="email" placeholder="Email Address" name="email">
                     </div>
                     <br>
                     <div >
-                        <label for="phone-no" class="formspaces">Phone number</label>
+                        <label for="phone-no" class="formspaces" >Phone number</label>
                         <input type="tel" id="phone-no" required placeholder="e.g. +20 1X XXX XXXX" class="inputs" name="phone-no">
                     </div>
                     <br>
                     <div>
                         <label for="password" class="formspaces">Password</label>
-                        <input type="password" required minlength="8" maxlength="30" class="inputs" placeholder="Password" id="registrationPassword" name="pass">
+                        <input type="password" required class="inputs" placeholder="Password" id="registrationPassword" name="pass">
                     </div>
                     <br>
                     <div>
-                        <input type="checkbox" class="formspaces" name="terms">
+                        <input type="checkbox" class="formspaces" name="terms" id="terms">
                         <label for="terms" class="terms-not">I agree to the terms & conditions</label>
                         
                     </div>
                     <br>
                     <div >
-                        <input type="checkbox" class="formspaces">
+                        <input type="checkbox" class="formspaces" id="notifications">
                         <label for="notifications" name="notifications" class="terms-not">Receive notifications from our website</label>
                     </div>
                     <br>
@@ -174,5 +179,36 @@
             </form>
     <!-- REGISTRATION FORM ENDS HERE -->
     <!-- NO FOOTER IN THE SIGN IN PAGE -->
+     <script>
+      const form = document.getElementById("registrationForm");
+       const phone = document.getElementById("phone-no");
+       const email = document.getElementById("email");
+       
+
+       form.addEventListener('submit',function(event){
+        const password = document.getElementById("registrationPassword").value;
+        let valid = true ;
+        if (!email.value.includes("@")|| !email.value.includes(".")){
+          alert("Email must contain '@' and '.' ");
+          valid = false;
+        }
+        const phonePattern = /^\+\d+$/;
+        if (!phonePattern.test(phone.value)){
+          alert("Phone number must start with '+' followed by digits only");
+          valid=false;
+        }
+        if (password.length<8) {
+          alert("Password must be at least 8 characters");
+          valid=false;
+        }
+        if(!valid){
+          event.preventDefault();
+        }
+        else if (valid)
+        {
+          alert("our account has been created sucessfully");
+        }
+       })
+     </script>
 </body>
 </html>
