@@ -383,7 +383,7 @@ html {
 }
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr; /*colums have the same width*/
+  grid-template-columns: 1fr 1fr; /*columns have the same width*/
   margin-top: 0px;
   gap: 30px; /* space between cols */
   align-items: stretch;
