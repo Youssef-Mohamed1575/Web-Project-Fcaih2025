@@ -56,42 +56,48 @@
 <div class="row">
     <div class="item">
 <img  class="img"    src="IMG-20250420-WA0072.jpg" alt="Laila Youseef" height="100" width="100">
-<h3>Liala Youseef</h3>
+<div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+  Liala Youseef </div>
 <p>The place is super cozy and perfect for hanging out with friends.
      The coffee was great, and the staff were really polite.
      I loved the seating and the simple decor. I’ll definitely come back</p>
     </div>
     <div class="item">
         <img  class="img" src="IMG-20250421-WA0031.jpg" alt="Omar Tarek" width="100" height="100">
-    <h3>Omar Tarek</h3>
+    <div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+          Omar Tarek  </div>
         <p>The café looks super chic, perfect for girls who love taking pictures and enjoying a classy spot.
              I tried the cake and it was delicious.
               The place is peaceful and relaxing.</p>
             </div>
             <div class="item">
                 <img  class="img"   src="IMG-20250421-WA0032.jpg" alt="Mazen Ahmed" width="100" height="100">
-                <h3>Mazen Ahmed</h3>
+                <div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+                  Mazen Ahmed </div>
                 <p>The overall vibe is excellent, with great music and warm lighting.
                      The service was quick, and the prices were reasonable.
                      It’s a nice spot that combines calm and style.”</p>
                     </div>
                     <div class="item">
                         <img class="img"  src="IMG-20250421-WA0034.jpg" alt="Nour Yasser" width="100" height="100">
-                        <h3>Nour Yasser</h3>
+                        <div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+                        Nour Yasser </div>
                         <p>The drinks were average and nothing special.
                              I was expecting more based on what I saw online.
                               The vibe was okay, but not really my style.</p>
                             </div>
                             <div class="item">
                                 <img class="img"   src="IMG-20250421-WA0033.jpg" alt="Marwen Tamer" width="100" height="100">
-                                <h3>Marwen Tamer</h3>
+                                <div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+                                  Marwen Tamer </div>
                                 <p>The staff were friendly, but the service was a bit slow. 
                                     We waited quite a while for our order, 
                                     which was a bit frustrating.</p>
                                     </div>
                                     <div class="item">
                                         <img class="img"    src="IMG-20250421-WA0035.jpg" alt="Celia Malek" width="100" height="100">
-                                        <h3>Celia Malek</h3>
+                                         <div style="font-size:  1.17em; font-weight: bold; margin-top: 1em; margin-bottom: 1em; display: block;">
+                                          Celia Malek </div>
                                         <p>The place was okay overall. I liked the decor and the general vibe,
                                              but some things could be better. My drink was just fine, not great,
                                               and the music was a bit too loud for my taste. It’s a nice spot, 
