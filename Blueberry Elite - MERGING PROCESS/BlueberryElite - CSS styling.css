@@ -149,7 +149,7 @@ html {
 
 /* !!!BEGINNING MainPage CONTENT */
 .Mainbody {
-  background: url(BgStatic.png);
+  /* background: url(BgStatic.png); */
   margin-top: -16px;
   background-color: #bf762e41;
   object-fit: cover;
@@ -230,6 +230,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
+  background-repeat: repeat;
+  object-fit: cover;
 }
 .slide1text {
   padding-left: 250px;
@@ -489,6 +493,9 @@ html {
   font-family: "Yellowtail";
   color: #333;
 }
+.dark-mode .Reviews-heading{
+  color: #fefefec6;
+}
 
 .Reviews-row {
   display: grid;
@@ -709,6 +716,12 @@ a:hover {
   align-items: center;
   margin-top: -10px;
 }
+<<<<<<< Updated upstream
+=======
+/* !!! BEGINNING SIGN-IN PAGE DARK-MOOD */
+
+/* !!!SIGN-IN PAGE CLOSURE */
+>>>>>>> Stashed changes
 
 /* !!!BEGINNING Suggestions/Complaints */
 .Complaint_body {
@@ -1078,6 +1091,7 @@ a:hover {
   font-size: 40px;
   font-family: var(--style-font-yellowtail);
   transition: color 0.3s ease;
+  font-weight: bold;
 }
 .dark-mode .footer-title {
   color: #cc9544;
@@ -1168,6 +1182,7 @@ a:hover {
   margin-right: 400px;
   border-top: 2px solid #fff;
   padding-top: 10px;
+  text-decoration: overline;
 }
 .copyright {
   margin-left: 35%;

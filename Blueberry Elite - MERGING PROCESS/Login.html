@@ -12,6 +12,33 @@
       body {
         background-image: url(RegisterPage\ CONTENT/Registration-background.webp);
       }
+      body.dark-mode .login {
+        background-color: #3b2f28fb;
+      }
+      body.dark-mode .login h1 {
+        color: #d1b07a;
+      }
+      
+      body.dark-mode a,
+      body.dark-mode label {
+        color: #d1b07a;
+      }
+      body.dark-mode .Register p {
+        color: #d1b07a;
+      }
+      body.dark-mode::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("imge.jpeg");
+        opacity: 0.5;
+        z-index: -1;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.507);
+      }
       footer {
   position: relative;
   margin-top: 50%;} /* push footer lower */
