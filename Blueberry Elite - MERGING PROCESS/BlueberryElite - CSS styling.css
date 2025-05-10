@@ -149,11 +149,9 @@ html {
 
 /* !!!BEGINNING MainPage CONTENT */
 .Mainbody {
-  /* background: url(BgStatic.png); */
   margin-top: -16px;
   background-color: #bf762e41;
   object-fit: cover;
-  z-index: -1; /* stays behind everything */
   background-size: contain;
   background-repeat: repeat;
 }
@@ -161,7 +159,6 @@ html {
   margin-top: -16px;
   background-color: #1c0a00;
   object-fit: cover;
-  z-index: -1;
 }
 .MainButton {
   background-color: var(--main-color);
@@ -269,6 +266,7 @@ html {
   display: flex;
   justify-content: space-between;
   background-color: #a1754b;
+  z-index: -1;
   background-image: url(BgStatic.png);
   background-size: 100%;
   background-repeat: repeat;
@@ -301,6 +299,8 @@ html {
 .slide3 {
   display: flex;
   justify-content: space-between;
+  background-image: url(BgStatic.png);
+  background-size: 100%;
 }
 .dark-mode .slide3 {
   display: flex;
@@ -335,10 +335,10 @@ html {
 }
 .dark-mode .slide4 {
   background-color: #60350190;
-  background-image: url(BgStatic.png);
+  /* background-image: url(BgStatic.png);
   background-size: 100%;
   background-repeat: repeat;
-  object-fit: cover;
+  object-fit: cover; */
   display: flex;
   justify-content: space-between;
 }
@@ -692,7 +692,7 @@ html {
   text-align: right;
   margin-top: 15px;
 }
-a:hover {
+.Register a:hover {
   text-decoration: underline;
 }
 .remember {
@@ -990,6 +990,7 @@ a:hover {
   font-family: cursive;
   font-weight: 100;
   font-size: 15px;
+  text-decoration: none;
 }
 .dark-mode .columns {
   display: flex;
@@ -1059,7 +1060,6 @@ a:hover {
   transition: 0.5s;
   text-decoration: none;
   color: #fff;
-
   line-height: 40px;
   font-size: 20px;
 }
@@ -1177,7 +1177,6 @@ a:hover {
   margin-right: 400px;
   border-top: 2px solid #fff;
   padding-top: 10px;
-  text-decoration: overline;
 }
 .copyright {
   margin-left: 35%;
